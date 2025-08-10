@@ -1,0 +1,176 @@
+{
+  "personal_info": {
+    "name": "Your Full Name",
+    "email": "your.email@example.com",
+    "phone": "+1-555-123-4567",
+    "location": "Remote (US Timezone)",
+    "linkedin": "linkedin.com/in/your-profile",
+    "github": "github.com/your-username",
+    "portfolio": "https://your-portfolio.com"
+  },
+  "summary": "AI Engineer with expertise in machine learning, deep learning, and LLM applications. Experienced in building scalable ML systems, training neural networks, and deploying AI solutions in production. Strong background in Python, PyTorch/TensorFlow, and cloud ML platforms.",
+  "target_roles": [
+    "AI Engineer",
+    "Machine Learning Engineer", 
+    "Deep Learning Engineer",
+    "LLM Engineer",
+    "AI Research Engineer",
+    "Applied Scientist",
+    "ML Platform Engineer"
+  ],
+  "experience": [
+    {
+      "title": "AI Engineer",
+      "company": "Tech Company",
+      "location": "Remote",
+      "start_date": "2023-01",
+      "end_date": "Present",
+      "description": "Develop and deploy machine learning models and AI applications for production use",
+      "achievements": [
+        "Built LLM-powered applications serving 50,000+ users with 99.9% uptime",
+        "Reduced model inference time by 60% through optimization and efficient deployment",
+        "Implemented MLOps pipeline that accelerated model deployment by 10x",
+        "Led development of computer vision system achieving 95% accuracy on production data"
+      ],
+      "technologies": ["Python", "PyTorch", "TensorFlow", "Transformers", "MLflow", "AWS SageMaker", "Docker", "Kubernetes"]
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "company": "Previous Company",
+      "location": "Remote", 
+      "start_date": "2021-06",
+      "end_date": "2022-12",
+      "description": "Developed ML models and data pipelines for recommendation systems and predictive analytics",
+      "achievements": [
+        "Built recommendation engine that increased user engagement by 35%",
+        "Designed feature engineering pipeline processing 1TB+ daily data",
+        "Implemented A/B testing framework for ML model performance evaluation",
+        "Optimized model training pipeline reducing training time from hours to minutes"
+      ],
+      "technologies": ["Python", "Scikit-learn", "Pandas", "Apache Spark", "PostgreSQL", "Redis", "AWS"]
+    }
+  ],
+  "skills": {
+    "ai_ml": [
+      "Machine Learning",
+      "Deep Learning", 
+      "Neural Networks",
+      "Large Language Models (LLMs)",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Reinforcement Learning",
+      "MLOps"
+    ],
+    "technical": [
+      "Python",
+      "PyTorch", 
+      "TensorFlow",
+      "Transformers",
+      "Hugging Face",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "MLflow",
+      "Weights & Biases",
+      "Apache Spark",
+      "Docker",
+      "Kubernetes"
+    ],
+    "cloud_platforms": [
+      "AWS SageMaker",
+      "Google Cloud AI Platform",
+      "Azure Machine Learning",
+      "Vertex AI",
+      "AWS Lambda",
+      "S3",
+      "EC2"
+    ],
+    "soft": [
+      "Research & Development",
+      "Problem Solving",
+      "Technical Leadership",
+      "Cross-functional Collaboration",
+      "Model Performance Analysis",
+      "Continuous Learning"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "University Name",
+      "location": "City, State",
+      "graduation_date": "2021-05", 
+      "gpa": "3.8",
+      "relevant_courses": [
+        "Machine Learning",
+        "Deep Learning",
+        "Neural Networks", 
+        "Computer Vision",
+        "Natural Language Processing",
+        "Statistical Learning Theory"
+      ],
+      "thesis": "Advanced Neural Architecture Search for Computer Vision Tasks"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Multi-Modal LLM Application",
+      "description": "Built a production-ready application combining text and image processing using transformers",
+      "technologies": ["Python", "Transformers", "PyTorch", "FastAPI", "Redis", "Docker"],
+      "url": "https://github.com/username/multimodal-llm",
+      "achievements": [
+        "Integrated CLIP and GPT models for multi-modal understanding",
+        "Achieved 40ms average response time with caching optimization",
+        "Deployed using microservices architecture handling 1000+ concurrent users"
+      ]
+    },
+    {
+      "name": "Real-time Object Detection System", 
+      "description": "End-to-end computer vision pipeline for real-time object detection and tracking",
+      "technologies": ["PyTorch", "YOLO", "OpenCV", "WebRTC", "AWS Lambda", "S3"],
+      "achievements": [
+        "Implemented custom YOLO model achieving 92% mAP on custom dataset",
+        "Built real-time streaming pipeline with sub-100ms latency",
+        "Created automated data annotation and model retraining system"
+      ]
+    },
+    {
+      "name": "Distributed Training Framework",
+      "description": "Built framework for distributed training of large language models across multiple GPUs",
+      "technologies": ["PyTorch", "Horovod", "Ray", "Kubernetes", "MLflow"],
+      "achievements": [
+        "Reduced training time for 7B parameter models by 75%",
+        "Implemented gradient compression reducing communication overhead by 60%",
+        "Created fault-tolerant training with automatic checkpoint recovery"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Efficient Neural Architecture Search for Edge Deployment",
+      "venue": "International Conference on Machine Learning (ICML)",
+      "year": "2023",
+      "url": "https://arxiv.org/abs/example"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Machine Learning - Specialty",
+      "issuer": "Amazon Web Services",
+      "date": "2023-09",
+      "credential_id": "AWS-MLS-123"
+    },
+    {
+      "name": "TensorFlow Developer Certificate",
+      "issuer": "TensorFlow",
+      "date": "2023-06",
+      "credential_id": "TF-DEV-456"
+    },
+    {
+      "name": "Deep Learning Specialization",
+      "issuer": "Coursera/deeplearning.ai",
+      "date": "2022-03",
+      "credential_id": "DL-SPEC-789"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "personal_info": {
+    "name": "Your Full Name",
+    "email": "your.email@example.com", 
+    "phone": "+1-555-123-4567",
+    "location": "Remote (US Timezone)",
+    "linkedin": "linkedin.com/in/your-profile",
+    "github": "github.com/your-username",
+    "portfolio": "https://your-portfolio.com"
+  },
+  "summary": "Cloud Engineer with expertise in designing, implementing, and managing scalable cloud infrastructure. Experienced in multi-cloud environments (AWS, GCP, Azure), Infrastructure as Code, DevOps practices, and cloud-native application deployment. Strong background in automation, monitoring, and security best practices.",
+  "target_roles": [
+    "Cloud Engineer",
+    "DevOps Engineer", 
+    "Site Reliability Engineer (SRE)",
+    "Cloud Infrastructure Engineer",
+    "Platform Engineer",
+    "Cloud Solutions Architect",
+    "Infrastructure Engineer",
+    "Cloud DevOps Engineer"
+  ],
+  "experience": [
+    {
+      "title": "Senior Cloud Engineer",
+      "company": "Tech Company",
+      "location": "Remote",
+      "start_date": "2022-03",
+      "end_date": "Present",
+      "description": "Design and manage cloud infrastructure for high-traffic applications across AWS and GCP",
+      "achievements": [
+        "Architected multi-region cloud infrastructure supporting 1M+ daily active users",
+        "Reduced infrastructure costs by 45% through right-sizing and reserved instance optimization",
+        "Implemented CI/CD pipelines reducing deployment time from hours to minutes",
+        "Achieved 99.99% uptime through automated monitoring and self-healing systems",
+        "Led migration from on-premises to cloud, completing 200+ services migration"
+      ],
+      "technologies": ["AWS", "GCP", "Terraform", "Kubernetes", "Docker", "Jenkins", "Prometheus", "Grafana", "Ansible"]
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Previous Company",
+      "location": "Remote",
+      "start_date": "2020-08",
+      "end_date": "2022-02", 
+      "description": "Automated deployment processes and managed containerized applications in cloud environments",
+      "achievements": [
+        "Built automated CI/CD pipelines for 50+ microservices using GitLab CI",
+        "Implemented Infrastructure as Code reducing provisioning time by 80%",
+        "Set up comprehensive monitoring and alerting reducing incident response time by 60%",
+        "Orchestrated Kubernetes clusters managing 200+ pods across multiple environments"
+      ],
+      "technologies": ["AWS", "Docker", "Kubernetes", "Terraform", "GitLab CI", "Python", "Bash", "CloudFormation"]
+    },
+    {
+      "title": "Cloud Infrastructure Specialist",
+      "company": "Earlier Company",
+      "location": "Remote",
+      "start_date": "2019-01",
+      "end_date": "2020-07",
+      "description": "Managed cloud infrastructure and implemented automation for development and production environments",
+      "achievements": [
+        "Migrated legacy applications to cloud-native architecture",
+        "Implemented backup and disaster recovery procedures achieving RTO < 1 hour",
+        "Automated infrastructure provisioning reducing manual effort by 70%",
+        "Established security best practices and compliance frameworks"
+      ],
+      "technologies": ["AWS", "Azure", "Python", "CloudFormation", "Terraform", "Jenkins", "Docker"]
+    }
+  ],
+  "skills": {
+    "cloud_platforms": [
+      "Amazon Web Services (AWS)",
+      "Google Cloud Platform (GCP)",
+      "Microsoft Azure",
+      "Multi-cloud Architecture",
+      "Hybrid Cloud Solutions"
+    ],
+    "devops_tools": [
+      "Docker",
+      "Kubernetes", 
+      "Jenkins",
+      "GitLab CI/CD",
+      "GitHub Actions",
+      "Ansible",
+      "Puppet",
+      "Chef"
+    ],
+    "infrastructure": [
+      "Terraform",
+      "CloudFormation",
+      "Pulumi",
+      "Infrastructure as Code (IaC)",
+      "Network Architecture", 
+      "Load Balancing",
+      "Auto Scaling",
+      "CDN Configuration"
+    ],
+    "monitoring": [
+      "Prometheus",
+      "Grafana", 
+      "ELK Stack",
+      "CloudWatch",
+      "Datadog",
+      "New Relic",
+      "PagerDuty"
+    ],
+    "security": [
+      "IAM",
+      "VPC", 
+      "Security Groups",
+      "SSL/TLS",
+      "Secrets Management",
+      "Compliance (SOC2, GDPR)",
+      "Vulnerability Scanning"
+    ],
+    "programming": [
+      "Python",
+      "Bash/Shell",
+      "Go",
+      "YAML",
+      "JSON",
+      "SQL"
+    ],
+    "soft": [
+      "Problem Solving",
+      "System Design",
+      "Incident Response",
+      "Technical Documentation",
+      "Cross-team Collaboration",
+      "Mentoring"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University Name", 
+      "location": "City, State",
+      "graduation_date": "2019-05",
+      "gpa": "3.7",
+      "relevant_courses": [
+        "Computer Networks",
+        "Distributed Systems",
+        "Operating Systems",
+        "Database Systems",
+        "Cybersecurity",
+        "Software Engineering"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Multi-Cloud Infrastructure Platform",
+      "description": "Built unified platform for managing resources across AWS, GCP, and Azure",
+      "technologies": ["Terraform", "Python", "Docker", "Kubernetes", "Prometheus"],
+      "url": "https://github.com/username/multicloud-platform",
+      "achievements": [
+        "Created unified API for provisioning resources across 3 cloud providers",
+        "Implemented cost optimization algorithms saving 30% on cloud spend",
+        "Built disaster recovery system with automatic failover capabilities"
+      ]
+    },
+    {
+      "name": "Kubernetes Operator for ML Workloads", 
+      "description": "Custom Kubernetes operator for managing machine learning training jobs",
+      "technologies": ["Go", "Kubernetes", "Docker", "Helm", "Prometheus"],
+      "achievements": [
+        "Automated ML pipeline deployment reducing setup time by 90%",
+        "Implemented auto-scaling for GPU resources based on queue depth",
+        "Created monitoring dashboards for ML job performance tracking"
+      ]
+    },
+    {
+      "name": "Infrastructure Monitoring Suite",
+      "description": "Comprehensive monitoring and alerting system for cloud infrastructure",
+      "technologies": ["Prometheus", "Grafana", "Python", "AWS Lambda", "SNS"],
+      "achievements": [
+        "Built predictive alerting reducing false positives by 85%",
+        "Created custom metrics for business-critical application monitoring",
+        "Implemented automated remediation for common infrastructure issues"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect - Professional",
+      "issuer": "Amazon Web Services",
+      "date": "2023-08",
+      "credential_id": "AWS-SAP-123"
+    },
+    {
+      "name": "Google Cloud Professional Cloud Architect", 
+      "issuer": "Google Cloud",
+      "date": "2023-05",
+      "credential_id": "GCP-PCA-456"
+    },
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "Cloud Native Computing Foundation",
+      "date": "2023-02",
+      "credential_id": "CKA-789"
+    },
+    {
+      "name": "HashiCorp Certified: Terraform Associate",
+      "issuer": "HashiCorp",
+      "date": "2022-11",
+      "credential_id": "HC-TA-101"
+    },
+    {
+      "name": "AWS Certified DevOps Engineer - Professional",
+      "issuer": "Amazon Web Services", 
+      "date": "2022-09",
+      "credential_id": "AWS-DOP-112"
+    }
+  ]
+}

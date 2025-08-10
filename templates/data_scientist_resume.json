@@ -1,0 +1,246 @@
+{
+  "personal_info": {
+    "name": "Your Full Name",
+    "email": "your.email@example.com",
+    "phone": "+1-555-123-4567",
+    "location": "Remote (US Timezone)",
+    "linkedin": "linkedin.com/in/your-profile", 
+    "github": "github.com/your-username",
+    "portfolio": "https://your-portfolio.com"
+  },
+  "summary": "Data Scientist with expertise in statistical analysis, machine learning, and business intelligence. Experienced in extracting insights from large datasets, building predictive models, and translating complex data into actionable business recommendations. Strong background in Python, R, SQL, and data visualization.",
+  "target_roles": [
+    "Data Scientist",
+    "Senior Data Scientist",
+    "Applied Data Scientist", 
+    "Research Scientist",
+    "Data Science Engineer",
+    "Principal Data Scientist",
+    "Staff Data Scientist",
+    "Analytics Engineer"
+  ],
+  "experience": [
+    {
+      "title": "Senior Data Scientist",
+      "company": "Tech Company",
+      "location": "Remote",
+      "start_date": "2022-01",
+      "end_date": "Present",
+      "description": "Lead data science initiatives across product, marketing, and operations teams",
+      "achievements": [
+        "Built predictive models that increased customer lifetime value by 28%",
+        "Developed recommendation system improving user engagement by 40%",
+        "Led A/B testing framework that optimized conversion rates across 20+ features",
+        "Created automated reporting dashboards saving 15 hours/week of manual analysis",
+        "Mentored 3 junior data scientists and established best practices for the team"
+      ],
+      "technologies": ["Python", "R", "SQL", "Pandas", "Scikit-learn", "XGBoost", "Tableau", "AWS", "Spark"]
+    },
+    {
+      "title": "Data Scientist",
+      "company": "Previous Company", 
+      "location": "Remote",
+      "start_date": "2020-03",
+      "end_date": "2021-12",
+      "description": "Analyzed customer behavior and built machine learning models for business optimization",
+      "achievements": [
+        "Developed churn prediction model with 89% accuracy, preventing $2M annual revenue loss",
+        "Built customer segmentation models that improved marketing campaign ROI by 35%",
+        "Implemented statistical tests for product experiments affecting 500K+ users",
+        "Created interactive dashboards for executive reporting and decision making",
+        "Collaborated with engineering team to deploy 10+ models to production"
+      ],
+      "technologies": ["Python", "SQL", "Jupyter", "Pandas", "NumPy", "Matplotlib", "Seaborn", "PostgreSQL", "Git"]
+    },
+    {
+      "title": "Data Analyst",
+      "company": "Earlier Company",
+      "location": "Remote",
+      "start_date": "2018-09",
+      "end_date": "2020-02",
+      "description": "Performed exploratory data analysis and created business intelligence solutions",
+      "achievements": [
+        "Analyzed customer data to identify $1.5M revenue opportunity in untapped segments",
+        "Built ETL pipelines processing 100GB+ daily data with 99.5% reliability",
+        "Created automated reporting reducing manual analysis time by 80%",
+        "Developed KPI tracking system for C-level executive dashboards"
+      ],
+      "technologies": ["SQL", "Python", "R", "Excel", "Tableau", "Power BI", "MySQL", "ETL"]
+    }
+  ],
+  "skills": {
+    "data_science": [
+      "Statistical Analysis",
+      "Machine Learning",
+      "Predictive Modeling",
+      "Time Series Analysis",
+      "Hypothesis Testing",
+      "A/B Testing", 
+      "Causal Inference",
+      "Feature Engineering"
+    ],
+    "programming": [
+      "Python",
+      "R",
+      "SQL", 
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "XGBoost",
+      "TensorFlow",
+      "PyTorch",
+      "Jupyter"
+    ],
+    "visualization": [
+      "Tableau",
+      "Power BI",
+      "Matplotlib",
+      "Seaborn", 
+      "Plotly",
+      "ggplot2",
+      "D3.js",
+      "Looker"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB", 
+      "Redis",
+      "Snowflake",
+      "BigQuery",
+      "Redshift"
+    ],
+    "big_data": [
+      "Apache Spark",
+      "Hadoop",
+      "Kafka",
+      "Airflow",
+      "Dask",
+      "Apache Beam"
+    ],
+    "cloud": [
+      "AWS",
+      "GCP",
+      "Azure",
+      "S3",
+      "EC2",
+      "Lambda",
+      "SageMaker",
+      "Vertex AI"
+    ],
+    "soft": [
+      "Business Acumen",
+      "Problem Solving",
+      "Communication",
+      "Data Storytelling",
+      "Cross-functional Collaboration",
+      "Mentoring"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Master of Science in Data Science",
+      "institution": "University Name",
+      "location": "City, State",
+      "graduation_date": "2018-05",
+      "gpa": "3.9",
+      "relevant_courses": [
+        "Statistical Learning",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Mining",
+        "Bayesian Statistics", 
+        "Time Series Analysis",
+        "Optimization Theory"
+      ],
+      "thesis": "Deep Learning Approaches for Customer Behavior Prediction in E-commerce"
+    },
+    {
+      "degree": "Bachelor of Science in Statistics",
+      "institution": "University Name",
+      "location": "City, State", 
+      "graduation_date": "2016-05",
+      "gpa": "3.8",
+      "relevant_courses": [
+        "Probability Theory",
+        "Statistical Inference",
+        "Regression Analysis",
+        "Experimental Design",
+        "Mathematical Statistics"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Customer Lifetime Value Prediction Platform",
+      "description": "End-to-end ML platform for predicting and optimizing customer lifetime value",
+      "technologies": ["Python", "XGBoost", "Flask", "PostgreSQL", "Docker", "AWS"],
+      "url": "https://github.com/username/clv-platform",
+      "achievements": [
+        "Built ensemble model achieving 15% improvement over baseline",
+        "Created real-time scoring API handling 10K+ requests/day",
+        "Implemented automated model retraining and deployment pipeline"
+      ]
+    },
+    {
+      "name": "Market Basket Analysis System",
+      "description": "Advanced recommendation system using market basket analysis and collaborative filtering",
+      "technologies": ["Python", "Spark", "Kafka", "Redis", "Tableau"],
+      "achievements": [
+        "Implemented Apriori and FP-Growth algorithms for association rule mining",
+        "Built real-time recommendation engine with sub-100ms response time",
+        "Created interactive dashboard for business stakeholders"
+      ]
+    },
+    {
+      "name": "Time Series Forecasting Framework",
+      "description": "Automated forecasting system for business metrics using multiple time series models",
+      "technologies": ["R", "Python", "Prophet", "ARIMA", "Shiny", "PostgreSQL"],
+      "achievements": [
+        "Implemented ensemble of 5+ forecasting models with automatic selection",
+        "Built interactive web application for forecast visualization",
+        "Achieved 85% accuracy on quarterly revenue forecasts"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Advanced Customer Segmentation Using Deep Clustering Techniques",
+      "venue": "International Conference on Data Science and Analytics",
+      "year": "2023",
+      "url": "https://example.com/paper1"
+    },
+    {
+      "title": "Causal Inference in Marketing Attribution: A Machine Learning Approach",
+      "venue": "Journal of Business Analytics",
+      "year": "2022",
+      "url": "https://example.com/paper2"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Cloud Professional Data Engineer",
+      "issuer": "Google Cloud",
+      "date": "2023-07",
+      "credential_id": "GCP-PDE-123"
+    },
+    {
+      "name": "AWS Certified Machine Learning - Specialty",
+      "issuer": "Amazon Web Services",
+      "date": "2023-04", 
+      "credential_id": "AWS-MLS-456"
+    },
+    {
+      "name": "Tableau Desktop Certified Professional",
+      "issuer": "Tableau",
+      "date": "2022-11",
+      "credential_id": "TCP-789"
+    },
+    {
+      "name": "Microsoft Certified: Azure Data Scientist Associate",
+      "issuer": "Microsoft",
+      "date": "2022-08",
+      "credential_id": "MCADSA-101"
+    }
+  ]
+}

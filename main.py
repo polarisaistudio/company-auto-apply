@@ -6,13 +6,14 @@ import random
 from datetime import datetime
 import json
 import os
-from typing import List
+from typing import List, Dict
 
 from config.settings import config
 from companies.company_manager import CompanyManager
 from scrapers.company_scraper import CompanyScraper, JobPosting
 from ai_modules.resume_generator import AIResumeGenerator
 from ai_modules.cover_letter_generator import CoverLetterGenerator
+from ai_modules.job_classifier import JobClassifier, JobRole
 from automation.company_applier import CompanyApplier
 from tracking.application_tracker import ApplicationTracker
 
@@ -49,11 +50,44 @@ class CompanyJobAutomationSystem:
             model=config.model_name
         )
         
-        # Load base resume
-        with open(config.base_resume_path, 'r', encoding='utf-8') as f:
-            self.base_resume = json.load(f)
+        # Job classification system
+        self.job_classifier = JobClassifier(
+            api_key=config.openai_api_key,
+            model=config.model_name
+        )
+        
+        # Load all resume templates
+        self.resume_templates = self._load_resume_templates()
             
-        self.logger.info("Company automation system initialized successfully")
+        self.logger.info("Enhanced company automation system initialized successfully")
+    
+    def _load_resume_templates(self) -> Dict:
+        """Load all resume templates for different roles"""
+        
+        templates = {}
+        template_files = {
+            JobRole.AI_ENGINEER: "templates/ai_engineer_resume.json",
+            JobRole.CLOUD_ENGINEER: "templates/cloud_engineer_resume.json",
+            JobRole.DATA_SCIENTIST: "templates/data_scientist_resume.json",
+            JobRole.OTHER: "templates/base_resume.json"
+        }
+        
+        for role, file_path in template_files.items():
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    templates[role] = json.load(f)
+                self.logger.info(f"Loaded resume template for {role.value}")
+            except FileNotFoundError:
+                self.logger.warning(f"Resume template not found: {file_path}")
+                # Use base template as fallback
+                try:
+                    with open("templates/base_resume.json", 'r', encoding='utf-8') as f:
+                        templates[role] = json.load(f)
+                except FileNotFoundError:
+                    self.logger.error("No resume templates found!")
+                    templates[role] = {}
+        
+        return templates
     
     async def run_company_applications(self):
         """Run company-focused job application process"""
@@ -84,13 +118,15 @@ class CompanyJobAutomationSystem:
                     self.logger.info(f"No jobs found at {company_config['name']}")
                     continue
                 
-                # Filter jobs based on preferences
-                filtered_jobs = self.filter_jobs(jobs, company_config)
+                # Intelligent job filtering and classification
+                relevant_jobs = self.classify_and_filter_jobs(jobs, company_config)
                 
-                # Process each job
-                for job in filtered_jobs:
+                # Process each relevant job
+                for job_info in relevant_jobs:
                     if applications_today >= config.max_applications_per_day:
                         break
+                    
+                    job, role, confidence = job_info["job"], job_info["role"], job_info["confidence"]
                         
                     # Check if already applied
                     if self.is_already_applied(job):
@@ -99,10 +135,10 @@ class CompanyJobAutomationSystem:
                     
                     # Manual review step (for ethical compliance)
                     if config.require_manual_review:
-                        if not self.manual_job_review(job):
+                        if not self.manual_job_review(job, role, confidence):
                             continue
                     
-                    success = await self.process_company_application(job, scraper)
+                    success = await self.process_company_application(job, scraper, role)
                     
                     if success:
                         applications_today += 1
@@ -129,6 +165,60 @@ class CompanyJobAutomationSystem:
         
         self.logger.info(f"Company applications completed, total: {applications_today} applications")
         self.generate_daily_report()
+    
+    def classify_and_filter_jobs(self, jobs: List[JobPosting], company_config: dict) -> List[Dict]:
+        """Classify jobs and filter for relevant roles with confidence scoring"""
+        
+        relevant_jobs = []
+        
+        for job in jobs:
+            # Use intelligent classification to determine if we should apply
+            should_apply, role, confidence = self.job_classifier.should_apply_to_job(job)
+            
+            if not should_apply:
+                self.logger.debug(f"Skipping job '{job.title}' - classified as {role.value} with {confidence:.2f} confidence")
+                continue
+            
+            # Additional filtering based on company preferences
+            if not self._passes_company_filters(job, company_config):
+                continue
+            
+            relevant_jobs.append({
+                "job": job,
+                "role": role,
+                "confidence": confidence
+            })
+            
+            self.logger.info(f"✅ Relevant job found: {job.title} (classified as {role.value}, {confidence:.2f} confidence)")
+        
+        self.logger.info(f"Found {len(relevant_jobs)} relevant jobs out of {len(jobs)} total jobs")
+        
+        # Sort by confidence score (highest first)
+        relevant_jobs.sort(key=lambda x: x["confidence"], reverse=True)
+        
+        return relevant_jobs
+    
+    def _passes_company_filters(self, job: JobPosting, company_config: dict) -> bool:
+        """Additional company-specific filtering"""
+        
+        # Salary filter
+        if job.salary and self.extract_salary(job.salary) < config.salary_min:
+            self.logger.debug(f"Job '{job.title}' filtered out due to salary")
+            return False
+        
+        # Location preference (if specified)
+        if company_config.get('preferred_locations'):
+            if job.location and not any(loc.lower() in job.location.lower() 
+                                      for loc in company_config['preferred_locations']):
+                self.logger.debug(f"Job '{job.title}' filtered out due to location")
+                return False
+        
+        # Experience level filter (avoid overly senior roles)
+        if self.is_too_senior(job):
+            self.logger.debug(f"Job '{job.title}' filtered out as too senior")
+            return False
+        
+        return True
     
     def filter_jobs(self, jobs: List[JobPosting], company_config: dict) -> List[JobPosting]:
         """Filter jobs based on preferences and company-specific criteria"""
@@ -192,18 +282,22 @@ class CompanyJobAutomationSystem:
         """Check if already applied to this job"""
         return self.tracker.has_applied_to_job(job.url)
     
-    def manual_job_review(self, job: JobPosting) -> bool:
-        """Manual review step for ethical compliance"""
+    def manual_job_review(self, job: JobPosting, role: JobRole, confidence: float) -> bool:
+        """Enhanced manual review step with AI classification insights"""
         
         print("\n" + "="*80)
-        print("MANUAL JOB REVIEW")
+        print("🎯 INTELLIGENT JOB REVIEW")
         print("="*80)
         print(f"Company: {job.company}")
         print(f"Position: {job.title}")
         print(f"Location: {job.location}")
         print(f"Salary: {job.salary or 'Not specified'}")
         print(f"URL: {job.url}")
-        print("\nJob Description Preview:")
+        print("\n🤖 AI CLASSIFICATION:")
+        print(f"Role Match: {role.value.replace('_', ' ').title()}")
+        print(f"Confidence: {confidence:.1%}")
+        print(f"Resume Template: {role.value.replace('_', ' ').title()} Resume")
+        print("\n📋 Job Description Preview:")
         print(job.description[:500] + "..." if len(job.description) > 500 else job.description)
         print("="*80)
         
@@ -220,36 +314,39 @@ class CompanyJobAutomationSystem:
             else:
                 print("Please enter 'y' for yes, 'n' for no, or 's' to skip all remaining")
     
-    async def process_company_application(self, job: JobPosting, scraper: CompanyScraper) -> bool:
-        """Process individual company application"""
+    async def process_company_application(self, job: JobPosting, scraper: CompanyScraper, role: JobRole) -> bool:
+        """Process individual company application with role-specific resume"""
         
-        self.logger.info(f"Processing application: {job.title} at {job.company}")
+        self.logger.info(f"Processing application: {job.title} at {job.company} (using {role.value} template)")
         
         try:
-            # 1. Customize resume for this specific job
+            # 1. Select appropriate resume template based on role classification
+            base_resume = self.resume_templates.get(role, self.resume_templates[JobRole.OTHER])
+            
+            # 2. Customize resume for this specific job and role
             customized_resume = self.resume_generator.customize_resume(
-                self.base_resume, job
+                base_resume, job
             )
             
-            # 2. Generate targeted cover letter
+            # 3. Generate targeted cover letter
             cover_letter = self.cover_letter_generator.generate_cover_letter(
                 customized_resume, job, config.personal_info
             )
             
-            # 3. Save customized files
-            resume_path = self.save_customized_resume(customized_resume, job)
+            # 4. Save customized files with role information
+            resume_path = self.save_customized_resume(customized_resume, job, role)
             
-            # 4. Apply through company website
+            # 5. Apply through company website
             applier = CompanyApplier(scraper.driver, job.company)
             success = applier.apply_to_job(job, resume_path, cover_letter)
             
-            # 5. Record application
+            # 6. Record application with role information
             self.tracker.add_application(job, resume_path, cover_letter, success)
             
             if success:
-                self.logger.info(f"Successfully applied: {job.title} at {job.company}")
+                self.logger.info(f"✅ Successfully applied: {job.title} at {job.company} (as {role.value})")
             else:
-                self.logger.warning(f"Application failed: {job.title} at {job.company}")
+                self.logger.warning(f"❌ Application failed: {job.title} at {job.company}")
                 
             return success
             
@@ -257,13 +354,14 @@ class CompanyJobAutomationSystem:
             self.logger.error(f"Error processing application: {e}")
             return False
     
-    def save_customized_resume(self, resume: dict, job: JobPosting) -> str:
-        """Save customized resume with company-specific filename"""
+    def save_customized_resume(self, resume: dict, job: JobPosting, role: JobRole) -> str:
+        """Save customized resume with role and company-specific filename"""
         
         safe_company = "".join(c for c in job.company if c.isalnum() or c in (' ', '-', '_')).rstrip()
         safe_title = "".join(c for c in job.title if c.isalnum() or c in (' ', '-', '_')).rstrip()
+        role_name = role.value
         
-        filename = f"resumes/{safe_company}_{safe_title}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        filename = f"resumes/{role_name}/{safe_company}_{safe_title}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         

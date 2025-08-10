@@ -47,10 +47,13 @@ class AIResumeGenerator:
             return base_resume  # Return original resume as fallback
     
     def create_company_resume_prompt(self, base_resume: Dict, job_posting: JobPosting) -> str:
-        """Create company-specific resume optimization prompt"""
+        """Create role-specific and company-specific resume optimization prompt"""
+        
+        # Determine role-specific focus based on resume template
+        role_focus = self._get_role_specific_focus(base_resume)
         
         return f"""
-        Please customize this resume for a specific company application:
+        Please customize this {role_focus} resume for a specific company application:
 
         **Target Company:** {job_posting.company}
         **Position:** {job_posting.title}
@@ -66,25 +69,87 @@ class AIResumeGenerator:
         **Current Resume:**
         {json.dumps(base_resume, indent=2, ensure_ascii=False)}
 
-        **Customization Instructions:**
-        1. **Company Alignment**: Research and incorporate knowledge about {job_posting.company}'s values, culture, and business model
-        2. **Role-Specific Optimization**: Reorganize experience to highlight the most relevant projects and achievements
-        3. **Keyword Integration**: Naturally integrate relevant keywords from the job description
-        4. **Skills Prioritization**: Reorder technical and soft skills to match job requirements
-        5. **Professional Summary**: Craft a compelling summary that shows fit for this specific role at {job_posting.company}
-        6. **Achievement Quantification**: Emphasize measurable impacts that would appeal to this company
-        7. **Cultural Fit**: Subtly demonstrate alignment with company values and working style
+        **{role_focus.upper()} CUSTOMIZATION INSTRUCTIONS:**
+        {self._get_role_specific_instructions(role_focus)}
+
+        **Company-Specific Optimization:**
+        1. **Company Alignment**: Incorporate knowledge about {job_posting.company}'s values, mission, and industry position
+        2. **Role-Specific Optimization**: Reorganize experience to highlight the most relevant {role_focus.lower()} projects and achievements
+        3. **Technical Keywords**: Naturally integrate relevant technical keywords from the job description
+        4. **Skills Prioritization**: Reorder technical and soft skills to match job requirements and {role_focus.lower()} best practices
+        5. **Professional Summary**: Craft a compelling summary that shows fit for this specific {role_focus.lower()} role at {job_posting.company}
+        6. **Impact Metrics**: Emphasize quantifiable impacts that would appeal to {job_posting.company}'s business objectives
+        7. **Cultural Fit**: Demonstrate alignment with {job_posting.company}'s engineering culture and values
 
         **Important Guidelines:**
         - Keep all information truthful - do not invent experience or skills
         - Maintain the original resume structure and formatting
         - Preserve all contact information exactly as provided
         - Focus on reordering, rewording, and emphasizing rather than adding new content
-        - Ensure the customization feels natural and not over-optimized
+        - Ensure the customization feels natural and authentic
+        - Highlight {role_focus.lower()}-specific achievements and technical expertise
 
         **Output Format:**
         Return the complete optimized resume in JSON format, maintaining the exact structure of the original.
         """
+    
+    def _get_role_specific_focus(self, resume: Dict) -> str:
+        """Determine the role focus based on resume template"""
+        
+        target_roles = resume.get("target_roles", [])
+        
+        if any("AI" in role or "Machine Learning" in role for role in target_roles):
+            return "AI ENGINEER"
+        elif any("Cloud" in role or "DevOps" in role or "SRE" in role for role in target_roles):
+            return "CLOUD ENGINEER"
+        elif any("Data Scientist" in role or "Analytics" in role for role in target_roles):
+            return "DATA SCIENTIST"
+        else:
+            return "SOFTWARE ENGINEER"
+    
+    def _get_role_specific_instructions(self, role_focus: str) -> str:
+        """Get role-specific customization instructions"""
+        
+        instructions = {
+            "AI ENGINEER": """
+        1. **ML/AI Focus**: Prioritize machine learning, AI, and deep learning experience
+        2. **Technical Stack**: Highlight Python, PyTorch/TensorFlow, transformers, and ML frameworks
+        3. **Model Development**: Emphasize model training, deployment, and optimization experience
+        4. **Data Pipeline**: Show experience with data preprocessing, feature engineering, and MLOps
+        5. **Research Impact**: Highlight publications, research contributions, or novel AI implementations
+        6. **Production Systems**: Demonstrate experience deploying AI/ML systems at scale
+        7. **Domain Expertise**: Align with specific AI domains (NLP, computer vision, etc.) mentioned in job
+            """,
+            "CLOUD ENGINEER": """
+        1. **Infrastructure Focus**: Prioritize cloud infrastructure, DevOps, and platform engineering experience
+        2. **Cloud Platforms**: Highlight experience with AWS, GCP, Azure, and multi-cloud architectures
+        3. **Automation**: Emphasize Infrastructure as Code, CI/CD pipelines, and automation frameworks
+        4. **Monitoring & Reliability**: Show experience with monitoring, logging, and maintaining high availability
+        5. **Containerization**: Highlight Docker, Kubernetes, and container orchestration experience
+        6. **Security**: Demonstrate cloud security, compliance, and best practices knowledge
+        7. **Scaling**: Show experience managing infrastructure for high-traffic applications
+            """,
+            "DATA SCIENTIST": """
+        1. **Analytics Focus**: Prioritize data analysis, statistical modeling, and business intelligence experience
+        2. **Statistical Methods**: Highlight expertise in statistics, hypothesis testing, and experimental design
+        3. **Business Impact**: Emphasize how data insights drove business decisions and revenue
+        4. **Visualization**: Show proficiency in data visualization and storytelling with data
+        5. **Tools & Frameworks**: Highlight Python/R, SQL, Tableau, and analytics platforms
+        6. **Domain Expertise**: Align with specific business domains (marketing analytics, product analytics, etc.)
+        7. **Cross-functional**: Demonstrate ability to work with product, engineering, and business teams
+            """,
+            "SOFTWARE ENGINEER": """
+        1. **Development Focus**: Prioritize software development, system design, and engineering experience
+        2. **Technical Skills**: Highlight programming languages, frameworks, and development tools
+        3. **System Design**: Show experience with scalable systems, APIs, and architecture
+        4. **Code Quality**: Emphasize testing, code review, and engineering best practices
+        5. **Collaboration**: Demonstrate teamwork, mentoring, and cross-functional collaboration
+        6. **Problem Solving**: Highlight complex technical challenges and innovative solutions
+        7. **Product Impact**: Show how technical contributions drove product success and user value
+            """
+        }
+        
+        return instructions.get(role_focus, instructions["SOFTWARE ENGINEER"])
     
     def validate_and_enhance_resume(self, ai_resume: Dict, original_resume: Dict) -> Dict:
         """Validate and enhance AI-generated resume"""

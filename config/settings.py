@@ -11,10 +11,16 @@ class CompanyJobSearchConfig:
     experience_level: str = "entry-mid"  # More conservative than previous system
     
     # Company-specific settings
-    max_companies_per_day: int = 5  # Limit companies to keep it focused
-    max_applications_per_day: int = 15  # More reasonable limit
+    max_companies_per_day: int = 10  # Process more companies for broader coverage
+    max_applications_per_day: int = 10  # Conservative limit for quality applications
+    max_applications_per_company: int = 1  # 1 job per company per day approach
     delay_between_applications: int = 90  # Longer delays for respectfulness
     delay_between_companies: int = 180  # 3 minutes between companies
+    
+    # Daily automation settings
+    enable_daily_automation: bool = False  # Set to True for daily scheduled runs
+    daily_run_time: str = "09:00"  # Time to run daily automation (24hr format)
+    job_classification_threshold: float = 0.6  # Minimum confidence for auto-application
     
     # Ethical settings
     require_manual_review: bool = True  # Default to manual review
