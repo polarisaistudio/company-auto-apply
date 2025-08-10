@@ -1,0 +1,108 @@
+{
+  "personal_info": {
+    "name": "Your Full Name",
+    "email": "your.email@example.com",
+    "phone": "+1-555-123-4567",
+    "location": "Your City, State",
+    "linkedin": "linkedin.com/in/your-profile",
+    "github": "github.com/your-username",
+    "portfolio": "https://your-portfolio.com"
+  },
+  "summary": "Experienced software engineer with a passion for building scalable applications and solving complex technical challenges. Strong background in full-stack development with expertise in modern frameworks and cloud technologies.",
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Previous Company",
+      "location": "City, State",
+      "start_date": "2022-01",
+      "end_date": "Present",
+      "description": "Develop and maintain web applications using modern technologies",
+      "achievements": [
+        "Built responsive web applications serving 10,000+ users",
+        "Improved system performance by 40% through code optimization",
+        "Led development of new feature that increased user engagement by 25%"
+      ],
+      "technologies": ["JavaScript", "React", "Node.js", "PostgreSQL", "AWS"]
+    },
+    {
+      "title": "Junior Developer",
+      "company": "Another Company", 
+      "location": "City, State",
+      "start_date": "2020-06",
+      "end_date": "2021-12",
+      "description": "Contributed to various web development projects and learned modern development practices",
+      "achievements": [
+        "Developed internal tools that reduced manual work by 30%",
+        "Collaborated with cross-functional teams on 5+ projects",
+        "Maintained 99% uptime for production systems"
+      ],
+      "technologies": ["Python", "Django", "JavaScript", "MySQL", "Docker"]
+    }
+  ],
+  "skills": {
+    "technical": [
+      "JavaScript/TypeScript",
+      "React",
+      "Node.js", 
+      "Python",
+      "PostgreSQL",
+      "AWS",
+      "Docker",
+      "Git",
+      "REST APIs",
+      "GraphQL"
+    ],
+    "soft": [
+      "Problem Solving",
+      "Team Collaboration", 
+      "Communication",
+      "Adaptability",
+      "Critical Thinking",
+      "Project Management"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University Name",
+      "location": "City, State", 
+      "graduation_date": "2020-05",
+      "gpa": "3.7",
+      "relevant_courses": [
+        "Data Structures and Algorithms",
+        "Database Systems", 
+        "Software Engineering",
+        "Web Development"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Portfolio Website",
+      "description": "Built a responsive portfolio website using React and deployed on AWS",
+      "technologies": ["React", "CSS", "AWS S3", "CloudFront"],
+      "url": "https://your-portfolio.com",
+      "achievements": [
+        "Implemented responsive design for mobile and desktop",
+        "Achieved 95+ Lighthouse performance score"
+      ]
+    },
+    {
+      "name": "Task Management App",
+      "description": "Full-stack web application for task management with real-time updates",
+      "technologies": ["Node.js", "Express", "PostgreSQL", "Socket.io", "React"],
+      "achievements": [
+        "Implemented real-time collaboration features",
+        "Designed RESTful API with authentication"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer - Associate",
+      "issuer": "Amazon Web Services",
+      "date": "2023-03",
+      "credential_id": "ABC123"
+    }
+  ]
+}
