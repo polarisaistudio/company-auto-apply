@@ -11,8 +11,8 @@ class CompanyJobSearchConfig:
     experience_level: str = "entry-mid"  # More conservative than previous system
     
     # Company-specific settings
-    max_companies_per_day: int = 10  # Process more companies for broader coverage
-    max_applications_per_day: int = 10  # Conservative limit for quality applications
+    max_companies_per_day: int = 40  # Process more companies for broader coverage
+    max_applications_per_day: int = 25  # Higher limit for broader reach while maintaining quality
     max_applications_per_company: int = 1  # 1 job per company per day approach
     delay_between_applications: int = 90  # Longer delays for respectfulness
     delay_between_companies: int = 180  # 3 minutes between companies
@@ -94,9 +94,9 @@ class CompanyJobSearchConfig:
         if email and "@" not in email:
             errors.append("Invalid email format")
         
-        # Check numeric limits (more conservative)
-        if self.max_applications_per_day > 25:
-            errors.append("max_applications_per_day should not exceed 25 for ethical usage")
+        # Check numeric limits (updated for hybrid approach)
+        if self.max_applications_per_day > 50:
+            errors.append("max_applications_per_day should not exceed 50 for ethical usage")
         
         if self.max_applications_per_day <= 0:
             errors.append("max_applications_per_day must be positive")
@@ -104,8 +104,8 @@ class CompanyJobSearchConfig:
         if self.delay_between_applications < 30:
             errors.append("delay_between_applications should be at least 30 seconds")
         
-        if self.max_companies_per_day > 10:
-            errors.append("max_companies_per_day should not exceed 10 for focused approach")
+        if self.max_companies_per_day > 100:
+            errors.append("max_companies_per_day should not exceed 100 for reasonable processing limits")
         
         # Check file paths
         if not os.path.exists(os.path.dirname(self.base_resume_path)):
