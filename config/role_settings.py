@@ -115,6 +115,41 @@ class RoleBasedSettings:
                 ],
                 log_file="data_scientist_applications.log",
                 resume_output_dir="resumes/data_scientist"
+            ),
+            
+            JobRole.SECURITY_ANALYST: RoleConfig(
+                role=JobRole.SECURITY_ANALYST,
+                daily_limit=25,
+                resume_template="templates/security_analyst_resume.json",
+                target_keywords=[
+                    "security analyst", "cybersecurity analyst", "soc analyst",
+                    "information security", "cyber security", "security engineer",
+                    "incident response", "threat analysis", "vulnerability assessment",
+                    "security operations", "infosec", "cybersecurity specialist",
+                    "siem", "splunk", "wireshark", "nessus", "penetration testing"
+                ],
+                company_priorities=[
+                    # Cybersecurity companies
+                    "CrowdStrike", "Palo Alto Networks", "Fortinet", "Check Point",
+                    "Okta", "SentinelOne", "Zscaler", "Proofpoint", "FireEye",
+                    "Rapid7", "Qualys", "Tenable", "Veracode", "Synopsys",
+                    # Financial services (high security needs)
+                    "Goldman Sachs", "JPMorgan Chase", "Bank of America", "Wells Fargo",
+                    # Tech companies with security focus
+                    "Microsoft", "Google", "Amazon", "Apple", "Meta"
+                ],
+                focus_areas=[
+                    "Security Information and Event Management (SIEM)",
+                    "Incident Response & Digital Forensics",
+                    "Vulnerability Assessment & Penetration Testing",
+                    "Threat Intelligence & Analysis",
+                    "Security Monitoring & Operations Center (SOC)",
+                    "Compliance & Risk Management (NIST, ISO 27001)",
+                    "Network Security & Firewalls",
+                    "Malware Analysis & Reverse Engineering"
+                ],
+                log_file="security_analyst_applications.log",
+                resume_output_dir="resumes/security_analyst"
             )
         }
     
@@ -151,6 +186,8 @@ class RoleBasedSettings:
                 role_matches = ['Cloud Engineer', 'DevOps', 'SRE', 'Platform Engineer']
             elif role == JobRole.DATA_SCIENTIST:
                 role_matches = ['Data Scientist', 'Analytics', 'Business Intelligence']
+            elif role == JobRole.SECURITY_ANALYST:
+                role_matches = ['Security Analyst', 'Cybersecurity', 'SOC Analyst', 'Information Security']
             
             if any(match in str(target_roles) for match in role_matches):
                 prioritized.append(company)
@@ -165,6 +202,7 @@ class RoleBasedSettings:
             "AI Engineer": self.role_configs[JobRole.AI_ENGINEER].daily_limit,
             "Cloud Engineer": self.role_configs[JobRole.CLOUD_ENGINEER].daily_limit,
             "Data Scientist": self.role_configs[JobRole.DATA_SCIENTIST].daily_limit,
+            "Security Analyst": self.role_configs[JobRole.SECURITY_ANALYST].daily_limit,
             "Total Possible": sum(config.daily_limit for config in self.role_configs.values())
         }
     

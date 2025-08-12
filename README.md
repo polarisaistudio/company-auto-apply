@@ -2,18 +2,18 @@
 
 🎯 **Strategic, AI-powered job application automation for company websites**
 
-An advanced job application system that intelligently matches you to **AI Engineer**, **Cloud Engineer**, and **Data Scientist** roles at 50+ remote-friendly companies. Uses AI classification, role-specific resume optimization, and daily automation to maximize your job search success while maintaining ethical standards.
+An advanced job application system that intelligently matches you to **AI Engineer**, **Cloud Engineer**, **Data Scientist**, and **Security Analyst** roles at 80+ remote-friendly companies. Uses AI classification, role-specific resume optimization, and daily automation to maximize your job search success while maintaining ethical standards.
 
 ## 🚀 Key Features
 
 ### **🎯 Multi-Role Strategy**
-- **3 Specialized Resume Templates**: AI Engineer, Cloud Engineer, Data Scientist
+- **4 Specialized Resume Templates**: AI Engineer, Cloud Engineer, Data Scientist, Security Analyst
 - **Intelligent Job Classification**: AI-powered role matching with confidence scoring  
 - **Smart Resume Selection**: Automatically chooses the best resume for each job
 - **Role-Specific Optimization**: Tailored AI prompts for each career track
 
 ### **🏢 Strategic Company Targeting** 
-- **50+ Remote-Friendly Companies**: Curated database of top tech companies
+- **80+ Remote-Friendly Companies**: Curated database of top tech and cybersecurity companies
 - **Hiring Pattern Analysis**: Companies actively hiring for your target roles
 - **1 Job Per Company Strategy**: Quality applications over quantity spam
 - **Daily Market Monitoring**: Continuous job discovery across all target companies
@@ -54,6 +54,7 @@ company-auto-apply/
     ├── ai_engineer_resume.json     # AI/ML specialized resume
     ├── cloud_engineer_resume.json  # DevOps/Infrastructure resume
     ├── data_scientist_resume.json  # Analytics/Data resume
+    ├── security_analyst_resume.json # Cybersecurity/SOC resume
     └── base_resume.json            # Fallback template
 ```
 
@@ -82,7 +83,13 @@ company-auto-apply/
 - **Datadog, Elastic** - Monitoring & search
 - **Mixpanel, Amplitude** - Product analytics
 
-*Total: 50+ carefully curated remote-friendly companies actively hiring for your target roles*
+### **Cybersecurity & Security**
+- **CrowdStrike, Palo Alto Networks** - Enterprise cybersecurity
+- **SentinelOne, Zscaler** - AI-powered security platforms
+- **Okta, CyberArk** - Identity & access management
+- **Splunk, Rapid7** - Security analytics & SIEM
+
+*Total: 80+ carefully curated remote-friendly companies actively hiring for your target roles*
 
 ## 🚀 Quick Start
 
@@ -102,6 +109,7 @@ cp .env.example .env
 templates/ai_engineer_resume.json      # For AI/ML roles
 templates/cloud_engineer_resume.json   # For DevOps/Infrastructure roles  
 templates/data_scientist_resume.json   # For Analytics/Data roles
+templates/security_analyst_resume.json # For Cybersecurity/SOC roles
 ```
 
 ### 3. Set Your Preferences
@@ -118,6 +126,12 @@ JOB_CLASSIFICATION_THRESHOLD=0.6     # AI confidence threshold
 # Interactive mode with manual review:
 python main.py
 
+# Role-specific searches:
+python run_ai_engineer.py          # AI/ML Engineer roles
+python run_cloud_engineer.py       # DevOps/Cloud roles  
+python run_data_scientist.py       # Analytics/Data roles
+python run_security_analyst.py     # Cybersecurity/SOC roles
+
 # Daily automation (set and forget):
 python automation/daily_scheduler.py
 ```
@@ -125,11 +139,12 @@ python automation/daily_scheduler.py
 ## 🎯 How It Works
 
 ### **Daily Workflow**
-1. **🔍 Company Scanning** - Checks your 50+ target companies for new jobs
+1. **🔍 Company Scanning** - Checks your 80+ target companies for new jobs
 2. **🤖 AI Classification** - Uses dual AI+rule system to classify each job:
    - AI Engineer (ML, deep learning, LLMs, computer vision)
    - Cloud Engineer (DevOps, infrastructure, Kubernetes, cloud platforms)
    - Data Scientist (analytics, statistical modeling, business intelligence)
+   - Security Analyst (cybersecurity, SOC, incident response, threat analysis)
 3. **📝 Smart Matching** - Selects appropriate resume template based on classification
 4. **✏️ AI Optimization** - Customizes resume and cover letter for specific company/role
 5. **👀 Manual Review** - Shows you AI classification + confidence before applying
@@ -150,7 +165,7 @@ Result: ✅ Applied with AI-specialized resume
 ## 🎯 Your Strategic Advantage
 
 ### **Targeted Expertise**
-- **Role Specialization**: 3 distinct career paths with tailored materials
+- **Role Specialization**: 4 distinct career paths with tailored materials
 - **Company Research**: Pre-researched companies with known remote policies
 - **Market Intelligence**: AI-powered insights into job requirements and trends
 
@@ -180,6 +195,7 @@ final_classification = combine_results(rule_based, ai_score)
 - **AI Engineer**: Emphasizes ML frameworks, model deployment, research impact
 - **Cloud Engineer**: Highlights infrastructure, DevOps, scaling experience  
 - **Data Scientist**: Focuses on analytics, statistical methods, business impact
+- **Security Analyst**: Emphasizes SIEM, incident response, threat analysis experience
 
 ### **Daily Automation**
 ```bash
@@ -222,10 +238,11 @@ delay_between_companies = 180       # 3+ minutes between companies
 ```
 📊 Daily Job Search Report - 2024-01-15
 
-Today's Applications: 8
+Today's Applications: 10
 - AI Engineer roles: 3 (Hugging Face, OpenAI, Anthropic)  
 - Cloud Engineer roles: 3 (Vercel, Supabase, HashiCorp)
 - Data Scientist roles: 2 (Stripe, Shopify)
+- Security Analyst roles: 2 (CrowdStrike, Palo Alto Networks)
 
 Classification Accuracy: 94%
 Average Confidence: 0.78
@@ -250,7 +267,7 @@ Companies Processed: 10/10
 
 - [ ] **Install dependencies**: `pip install -r requirements.txt`
 - [ ] **Configure environment**: Edit `.env` with your information
-- [ ] **Customize resume templates**: Add your actual experience to all 3 templates
+- [ ] **Customize resume templates**: Add your actual experience to all 4 templates
 - [ ] **Review target companies**: Edit `companies/target_companies.json` 
 - [ ] **Test classification**: Run `python main.py` with manual review enabled
 - [ ] **Set daily automation**: Configure `daily_scheduler.py` for continuous monitoring

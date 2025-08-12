@@ -11,6 +11,7 @@ class JobRole(Enum):
     AI_ENGINEER = "ai_engineer"
     CLOUD_ENGINEER = "cloud_engineer" 
     DATA_SCIENTIST = "data_scientist"
+    SECURITY_ANALYST = "security_analyst"
     OTHER = "other"
 
 class JobClassifier:
@@ -67,6 +68,24 @@ class JobClassifier:
                 ],
                 "anti_keywords": [
                     "purely engineering", "infrastructure only", "marketing", "sales"
+                ]
+            },
+            JobRole.SECURITY_ANALYST: {
+                "primary_keywords": [
+                    "security analyst", "cybersecurity analyst", "soc analyst", 
+                    "information security", "cyber security", "security engineer",
+                    "incident response", "threat analysis", "vulnerability assessment",
+                    "security operations", "infosec", "cybersecurity specialist"
+                ],
+                "secondary_keywords": [
+                    "siem", "splunk", "wireshark", "nessus", "metasploit", "burp suite",
+                    "penetration testing", "ethical hacking", "malware analysis",
+                    "forensics", "compliance", "risk assessment", "firewall", "ids",
+                    "ips", "threat hunting", "security monitoring", "cissp", "ceh",
+                    "sans", "nist", "iso 27001", "pci dss", "gdpr", "hipaa"
+                ],
+                "anti_keywords": [
+                    "purely sales", "marketing only", "business development only"
                 ]
             }
         }
@@ -180,6 +199,7 @@ class JobClassifier:
                 "ai_engineer": JobRole.AI_ENGINEER,
                 "cloud_engineer": JobRole.CLOUD_ENGINEER,
                 "data_scientist": JobRole.DATA_SCIENTIST,
+                "security_analyst": JobRole.SECURITY_ANALYST,
                 "other": JobRole.OTHER
             }
             
@@ -210,7 +230,8 @@ class JobClassifier:
         1. **ai_engineer**: Roles focused on building AI/ML systems, training models, deploying ML applications, working with LLMs, computer vision, NLP, or AI research
         2. **cloud_engineer**: Roles focused on cloud infrastructure, DevOps, SRE, platform engineering, containerization, CI/CD, monitoring, or infrastructure automation
         3. **data_scientist**: Roles focused on data analysis, statistical modeling, business intelligence, analytics, experimentation, or extracting insights from data
-        4. **other**: Roles that don't primarily fit the above categories
+        4. **security_analyst**: Roles focused on cybersecurity, threat analysis, security monitoring, incident response, vulnerability assessment, or information security
+        5. **other**: Roles that don't primarily fit the above categories
 
         **JOB POSTING:**
         Title: {job.title}
@@ -229,7 +250,7 @@ class JobClassifier:
 
         **OUTPUT FORMAT (JSON only):**
         {{
-            "role": "ai_engineer|cloud_engineer|data_scientist|other",
+            "role": "ai_engineer|cloud_engineer|data_scientist|security_analyst|other",
             "confidence": 0.85,
             "reasoning": "Brief explanation of why this role fits the category",
             "key_factors": ["factor1", "factor2", "factor3"]
@@ -277,6 +298,7 @@ class JobClassifier:
             JobRole.AI_ENGINEER: "templates/ai_engineer_resume.json",
             JobRole.CLOUD_ENGINEER: "templates/cloud_engineer_resume.json", 
             JobRole.DATA_SCIENTIST: "templates/data_scientist_resume.json",
+            JobRole.SECURITY_ANALYST: "templates/security_analyst_resume.json",
             JobRole.OTHER: "templates/base_resume.json"  # Default fallback
         }
         

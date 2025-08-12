@@ -1,0 +1,142 @@
+{
+  "personal_info": {
+    "name": "Your Full Name",
+    "email": "your.email@example.com",
+    "phone": "+1-555-123-4567",
+    "location": "Your City, State",
+    "linkedin": "linkedin.com/in/your-profile",
+    "github": "github.com/your-username",
+    "portfolio": "https://your-portfolio.com"
+  },
+  "summary": "Dedicated cybersecurity professional with expertise in threat analysis, incident response, and security operations. Experienced in implementing security controls, conducting vulnerability assessments, and maintaining SOC operations to protect organizational assets against evolving cyber threats.",
+  "experience": [
+    {
+      "title": "Security Analyst",
+      "company": "Previous Company",
+      "location": "City, State",
+      "start_date": "2022-01",
+      "end_date": "Present",
+      "description": "Monitor security events, investigate incidents, and implement security controls",
+      "achievements": [
+        "Reduced mean time to detection (MTTD) by 40% through enhanced SIEM rule optimization",
+        "Led incident response for 50+ security events with 100% containment success rate",
+        "Implemented automated threat hunting workflows reducing manual analysis time by 60%",
+        "Conducted quarterly vulnerability assessments identifying and remediating 200+ critical findings"
+      ],
+      "technologies": ["Splunk", "SIEM", "Wireshark", "Nessus", "Metasploit", "Python", "PowerShell", "NIST Framework"]
+    },
+    {
+      "title": "Junior Security Analyst",
+      "company": "Another Company", 
+      "location": "City, State",
+      "start_date": "2020-06",
+      "end_date": "2021-12",
+      "description": "Supported security operations and monitoring activities in a 24/7 SOC environment",
+      "achievements": [
+        "Monitored security alerts and escalated 95% of critical incidents within SLA requirements",
+        "Assisted with digital forensics investigations for insider threat cases",
+        "Maintained security documentation and incident response playbooks",
+        "Achieved Security+ and CySA+ certifications during tenure"
+      ],
+      "technologies": ["Splunk", "QRadar", "Wireshark", "Nmap", "Burp Suite", "Windows Security", "Linux"]
+    }
+  ],
+  "skills": {
+    "technical": [
+      "SIEM (Splunk, QRadar, LogRhythm)",
+      "Incident Response & Digital Forensics",
+      "Vulnerability Assessment (Nessus, OpenVAS, Qualys)",
+      "Penetration Testing (Metasploit, Burp Suite, OWASP ZAP)",
+      "Network Security (Firewalls, IDS/IPS, VPN)",
+      "Threat Intelligence & Analysis",
+      "Python/PowerShell Scripting",
+      "Malware Analysis",
+      "Risk Assessment & Compliance",
+      "Cloud Security (AWS, Azure, GCP)"
+    ],
+    "security_frameworks": [
+      "NIST Cybersecurity Framework",
+      "ISO 27001/27002",
+      "OWASP Top 10",
+      "MITRE ATT&CK Framework",
+      "CIS Controls",
+      "PCI DSS",
+      "HIPAA",
+      "SOX Compliance"
+    ],
+    "soft": [
+      "Critical Thinking",
+      "Problem Solving",
+      "Team Collaboration", 
+      "Communication",
+      "Attention to Detail",
+      "Incident Management"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science in Cybersecurity",
+      "institution": "University Name",
+      "location": "City, State", 
+      "graduation_date": "2020-05",
+      "gpa": "3.7",
+      "relevant_courses": [
+        "Network Security",
+        "Digital Forensics", 
+        "Ethical Hacking",
+        "Cryptography",
+        "Risk Management",
+        "Incident Response"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "CompTIA Security+",
+      "issuer": "CompTIA",
+      "date": "2023-03",
+      "credential_id": "SEC123"
+    },
+    {
+      "name": "CompTIA CySA+",
+      "issuer": "CompTIA",
+      "date": "2023-06",
+      "credential_id": "CYSA456"
+    },
+    {
+      "name": "Certified Ethical Hacker (CEH)",
+      "issuer": "EC-Council",
+      "date": "2023-09",
+      "credential_id": "CEH789"
+    }
+  ],
+  "projects": [
+    {
+      "name": "SOC Automation Framework",
+      "description": "Developed Python-based automation scripts to streamline incident response workflows",
+      "technologies": ["Python", "Splunk API", "SOAR", "REST APIs"],
+      "achievements": [
+        "Reduced incident response time by 50% through automated playbooks",
+        "Integrated multiple security tools for centralized alert management"
+      ]
+    },
+    {
+      "name": "Threat Hunting Dashboard",
+      "description": "Built custom Splunk dashboard for proactive threat hunting and IOC tracking",
+      "technologies": ["Splunk", "SPL", "MITRE ATT&CK", "Threat Intelligence"],
+      "achievements": [
+        "Enabled proactive identification of advanced persistent threats",
+        "Provided real-time visibility into network anomalies and suspicious activities"
+      ]
+    },
+    {
+      "name": "Vulnerability Management Program",
+      "description": "Designed and implemented comprehensive vulnerability assessment program",
+      "technologies": ["Nessus", "OpenVAS", "Python", "Risk Scoring"],
+      "achievements": [
+        "Established automated scanning schedules covering 100% of infrastructure",
+        "Reduced critical vulnerability exposure by 80% through prioritized remediation"
+      ]
+    }
+  ]
+}
