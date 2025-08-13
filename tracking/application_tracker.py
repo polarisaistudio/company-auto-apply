@@ -55,7 +55,7 @@ class ApplicationTracker:
             industry TEXT,
             size TEXT,
             culture_notes TEXT,
-            values TEXT,
+            company_values TEXT,
             pros TEXT,
             cons TEXT,
             salary_info TEXT,

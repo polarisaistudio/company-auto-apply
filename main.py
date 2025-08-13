@@ -69,6 +69,7 @@ class CompanyJobAutomationSystem:
             JobRole.AI_ENGINEER: "templates/ai_engineer_resume.json",
             JobRole.CLOUD_ENGINEER: "templates/cloud_engineer_resume.json",
             JobRole.DATA_SCIENTIST: "templates/data_scientist_resume.json",
+            JobRole.SECURITY_ANALYST: "templates/security_analyst_resume.json",
             JobRole.OTHER: "templates/base_resume.json"
         }
         

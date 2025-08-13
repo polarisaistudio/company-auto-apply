@@ -162,10 +162,18 @@ class JobClassifier:
             best_role = JobRole.OTHER
             confidence = 0.9  # High confidence that it's OTHER
         
+        # Handle reasoning for different roles
+        if best_role == JobRole.OTHER:
+            reasoning = "No strong keyword matches found, classified as OTHER"
+            matched_keywords_count = 0
+        else:
+            matched_keywords_count = len(role_scores[best_role]['matched_keywords'])
+            reasoning = f"Matched {matched_keywords_count} keywords for {best_role.value}"
+        
         analysis = {
             "method": "rule_based",
             "all_scores": role_scores,
-            "reasoning": f"Matched {len(role_scores[best_role]['matched_keywords'])} keywords"
+            "reasoning": reasoning
         }
         
         return best_role, confidence, analysis
