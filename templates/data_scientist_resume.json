@@ -1,14 +1,14 @@
 {
   "personal_info": {
-    "name": "Your Full Name",
-    "email": "your.email@example.com",
-    "phone": "+1-555-123-4567",
-    "location": "Remote (US Timezone)",
-    "linkedin": "linkedin.com/in/your-profile", 
-    "github": "github.com/your-username",
-    "portfolio": "https://your-portfolio.com"
+    "name": "Xin Wang",
+    "email": "xinwang.play@gmail.com",
+    "phone": "610-703-5277",
+    "location": "Remote, TX",
+    "linkedin": "linkedin.com/in/xin-wang-36202761", 
+    "github": "github.com/polarisaistudio",
+    "portfolio": ""
   },
-  "summary": "Data Scientist with expertise in statistical analysis, machine learning, and business intelligence. Experienced in extracting insights from large datasets, building predictive models, and translating complex data into actionable business recommendations. Strong background in Python, R, SQL, and data visualization.",
+  "summary": "Data Scientist and Analytics Engineer with 10+ years building data-driven systems and scalable analytics platforms at Google, USAA, and FedEx. Expert in statistical analysis, predictive modeling, and business intelligence with proven impact: 35% performance optimization, 40% cost reduction, and analytics systems serving millions of users. Combines deep technical expertise in distributed data processing with business acumen to drive data-driven decision making.",
   "target_roles": [
     "Data Scientist",
     "Senior Data Scientist",
@@ -21,112 +21,112 @@
   ],
   "experience": [
     {
-      "title": "Senior Data Scientist",
-      "company": "Tech Company",
-      "location": "Remote",
-      "start_date": "2022-01",
+      "title": "Data Systems Architect & Analytics Engineer",
+      "company": "Polaris AI Studio",
+      "location": "Remote, TX",
+      "start_date": "2023-01",
       "end_date": "Present",
-      "description": "Lead data science initiatives across product, marketing, and operations teams",
+      "description": "Lead data science initiatives and analytics infrastructure for AI-powered content generation system with focus on user analytics and performance metrics",
       "achievements": [
-        "Built predictive models that increased customer lifetime value by 28%",
-        "Developed recommendation system improving user engagement by 40%",
-        "Led A/B testing framework that optimized conversion rates across 20+ features",
-        "Created automated reporting dashboards saving 15 hours/week of manual analysis",
-        "Mentored 3 junior data scientists and established best practices for the team"
+        "Architected comprehensive analytics pipeline for AI content generation system tracking user engagement, content quality metrics, and system performance",
+        "Implemented real-time data processing and analytics achieving 30-60 second end-to-end analytics with 99.9% data accuracy for 500+ concurrent users",
+        "Built predictive analytics for content quality and user satisfaction, achieving 4.8/5 user satisfaction through data-driven content optimization",
+        "Developed cost optimization analytics reducing infrastructure costs by 40% through intelligent resource allocation and usage pattern analysis",
+        "Created comprehensive monitoring and analytics dashboards using CloudWatch and custom metrics for proactive performance optimization",
+        "Implemented A/B testing framework for AI model performance evaluation and content generation optimization with statistical significance analysis",
+        "Built automated reporting system providing business intelligence insights for strategic decision making and product development",
+        "Designed data validation and quality assurance systems achieving 99.5% data accuracy across distributed analytics infrastructure"
       ],
-      "technologies": ["Python", "R", "SQL", "Pandas", "Scikit-learn", "XGBoost", "Tableau", "AWS", "Spark"]
+      "technologies": ["Python", "AWS Analytics", "Real-time Processing", "Statistical Analysis", "A/B Testing", "Business Intelligence", "Data Pipelines", "Predictive Modeling"]
     },
     {
-      "title": "Data Scientist",
-      "company": "Previous Company", 
-      "location": "Remote",
-      "start_date": "2020-03",
-      "end_date": "2021-12",
-      "description": "Analyzed customer behavior and built machine learning models for business optimization",
+      "title": "Data Engineer - Analytics Infrastructure",
+      "company": "Google",
+      "location": "Remote, TX", 
+      "start_date": "2022-07",
+      "end_date": "2025-07",
+      "description": "Design and implement large-scale data analytics systems and optimization algorithms for distributed Android services affecting millions of devices",
       "achievements": [
-        "Developed churn prediction model with 89% accuracy, preventing $2M annual revenue loss",
-        "Built customer segmentation models that improved marketing campaign ROI by 35%",
-        "Implemented statistical tests for product experiments affecting 500K+ users",
-        "Created interactive dashboards for executive reporting and decision making",
-        "Collaborated with engineering team to deploy 10+ models to production"
+        "Designed and implemented automated analytics tools for distributed Android services, reducing manual data analysis overhead by 60% across global infrastructure",
+        "Built large-scale data monitoring and analytics system preventing 15+ production incidents through predictive analytics and early anomaly detection",
+        "Optimized distributed system performance analytics by 35% through advanced algorithmic improvements affecting millions of Android devices worldwide",
+        "Implemented data processing optimization reducing analytics infrastructure resource consumption by 40% during large-scale data operations",
+        "Developed multi-process data analysis algorithms improving analytics processing efficiency by 25% across distributed mobile services",
+        "Maintained 99.5% analytics service availability through proactive monitoring, automated alerting, and rapid data incident response procedures",
+        "Led analytics infrastructure modernization initiatives reducing technical debt by 30% and improving data system maintainability",
+        "Built advanced performance analysis tools for distributed systems using statistical methods and machine learning to identify optimization opportunities",
+        "Implemented automated testing and deployment pipelines for analytics services ensuring reliable delivery of critical mobile intelligence insights"
       ],
-      "technologies": ["Python", "SQL", "Jupyter", "Pandas", "NumPy", "Matplotlib", "Seaborn", "PostgreSQL", "Git"]
+      "technologies": ["GCP BigQuery", "Distributed Analytics", "Statistical Analysis", "Performance Analytics", "Data Pipeline Automation", "Predictive Analytics"]
     },
     {
-      "title": "Data Analyst",
-      "company": "Earlier Company",
-      "location": "Remote",
-      "start_date": "2018-09",
-      "end_date": "2020-02",
-      "description": "Performed exploratory data analysis and created business intelligence solutions",
+      "title": "Data Scientist & Analytics Developer",
+      "company": "USAA",
+      "location": "Plano, TX",
+      "start_date": "2020-01",
+      "end_date": "2022-07",
+      "description": "Architect data analytics systems and business intelligence solutions for financial services platform with focus on customer behavior analysis",
       "achievements": [
-        "Analyzed customer data to identify $1.5M revenue opportunity in untapped segments",
-        "Built ETL pipelines processing 100GB+ daily data with 99.5% reliability",
-        "Created automated reporting reducing manual analysis time by 80%",
-        "Developed KPI tracking system for C-level executive dashboards"
+        "Architected scalable analytics backend processing 10M+ customer interactions monthly with 99.8% data accuracy and real-time insights",
+        "Implemented predictive analytics and customer behavior modeling, reducing customer service costs by 40% and improving customer satisfaction by 25%",
+        "Built real-time business intelligence components using modern analytics architecture, improving decision-making speed by 25% through automated insights",
+        "Designed automated analytics testing pipeline achieving 70%+ data coverage and reducing analytics deployment risks through comprehensive quality validation",
+        "Led analytics migration initiatives and business intelligence modernization projects, improving data reliability and reducing operational overhead",
+        "Implemented real-time customer analytics using Firebase Analytics and custom dashboards, maintaining proactive business intelligence management",
+        "Architected proof-of-concept analytics solutions for new financial products reducing development time by 20% through reusable analytics components",
+        "Built resilient analytics microservices architecture supporting critical financial services with disaster recovery and data backup capabilities",
+        "Mentored 5+ developers on data science practices, analytics automation, and scalable business intelligence architecture design"
       ],
-      "technologies": ["SQL", "Python", "R", "Excel", "Tableau", "Power BI", "MySQL", "ETL"]
+      "technologies": ["Python", "SQL", "Firebase Analytics", "Predictive Modeling", "Customer Analytics", "Business Intelligence", "Financial Data Analysis"]
     }
   ],
   "skills": {
-    "data_science": [
+    "analytics_business_intelligence": [
       "Statistical Analysis",
-      "Machine Learning",
       "Predictive Modeling",
-      "Time Series Analysis",
-      "Hypothesis Testing",
-      "A/B Testing", 
-      "Causal Inference",
-      "Feature Engineering"
+      "A/B Testing & Experimental Design",
+      "Business Intelligence",
+      "Customer Analytics",
+      "Performance Analytics",
+      "Real-time Analytics",
+      "Cost Optimization Analytics"
+    ],
+    "data_engineering": [
+      "Data Pipeline Design",
+      "Real-time Data Processing",
+      "Large-scale Analytics",
+      "Data Quality Assurance",
+      "Analytics Infrastructure",
+      "Distributed Analytics",
+      "ETL/ELT Processes",
+      "Data Validation"
     ],
     "programming": [
       "Python",
-      "R",
-      "SQL", 
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "XGBoost",
-      "TensorFlow",
-      "PyTorch",
-      "Jupyter"
+      "Java",
+      "Kotlin",
+      "SQL",
+      "JavaScript/TypeScript",
+      "Shell Scripting",
+      "C++"
     ],
-    "visualization": [
-      "Tableau",
-      "Power BI",
-      "Matplotlib",
-      "Seaborn", 
-      "Plotly",
-      "ggplot2",
-      "D3.js",
-      "Looker"
+    "cloud_analytics": [
+      "AWS Analytics (S3, RDS, SageMaker)",
+      "GCP BigQuery",
+      "Firebase Analytics",
+      "CloudWatch",
+      "Distributed Data Processing",
+      "Cloud Data Warehousing",
+      "Auto-scaling Analytics"
     ],
-    "databases": [
+    "databases_storage": [
       "PostgreSQL",
       "MySQL",
-      "MongoDB", 
       "Redis",
-      "Snowflake",
-      "BigQuery",
-      "Redshift"
-    ],
-    "big_data": [
-      "Apache Spark",
-      "Hadoop",
-      "Kafka",
-      "Airflow",
-      "Dask",
-      "Apache Beam"
-    ],
-    "cloud": [
-      "AWS",
-      "GCP",
-      "Azure",
-      "S3",
-      "EC2",
-      "Lambda",
-      "SageMaker",
-      "Vertex AI"
+      "SQLite",
+      "Cloud Storage Solutions",
+      "Database Performance Tuning",
+      "Data Warehousing"
     ],
     "soft": [
       "Business Acumen",
@@ -139,108 +139,64 @@
   },
   "education": [
     {
-      "degree": "Master of Science in Data Science",
-      "institution": "University Name",
-      "location": "City, State",
-      "graduation_date": "2018-05",
-      "gpa": "3.9",
+      "degree": "Master of Science in Computer Science",
+      "institution": "Lehigh University",
+      "location": "Bethlehem, PA",
+      "graduation_date": "2014-08",
+      "gpa": "",
       "relevant_courses": [
         "Statistical Learning",
         "Machine Learning",
-        "Deep Learning",
         "Data Mining",
-        "Bayesian Statistics", 
-        "Time Series Analysis",
-        "Optimization Theory"
+        "Algorithms", 
+        "Database Systems",
+        "Statistical Analysis"
       ],
-      "thesis": "Deep Learning Approaches for Customer Behavior Prediction in E-commerce"
+      "thesis": ""
     },
     {
-      "degree": "Bachelor of Science in Statistics",
-      "institution": "University Name",
-      "location": "City, State", 
-      "graduation_date": "2016-05",
-      "gpa": "3.8",
+      "degree": "Master of Engineering in Signal Processing",
+      "institution": "University of Chinese Academy of Sciences",
+      "location": "Beijing, China",
+      "graduation_date": "2012-05",
+      "gpa": "",
       "relevant_courses": [
-        "Probability Theory",
-        "Statistical Inference",
-        "Regression Analysis",
-        "Experimental Design",
-        "Mathematical Statistics"
+        "Digital Signal Processing",
+        "Statistical Analysis",
+        "Pattern Recognition",
+        "Data Analysis",
+        "Mathematical Modeling"
+      ],
+      "thesis": ""
+    },
+    {
+      "degree": "Bachelor of Engineering in Electronics Information Science and Technology",
+      "institution": "China University of Mining and Technology",
+      "location": "Jiangsu, China",
+      "graduation_date": "2009-05",
+      "gpa": "",
+      "relevant_courses": [
+        "Statistics",
+        "Mathematics",
+        "Data Analysis",
+        "Programming",
+        "Signal Processing"
       ]
     }
   ],
   "projects": [
     {
-      "name": "Customer Lifetime Value Prediction Platform",
-      "description": "End-to-end ML platform for predicting and optimizing customer lifetime value",
-      "technologies": ["Python", "XGBoost", "Flask", "PostgreSQL", "Docker", "AWS"],
-      "url": "https://github.com/username/clv-platform",
+      "name": "Production Analytics Infrastructure for AI Systems",
+      "description": "Comprehensive analytics pipeline for AI content generation system with user behavior analysis and performance optimization",
+      "technologies": ["Python", "AWS Analytics", "Real-time Processing", "Statistical Analysis", "A/B Testing", "Business Intelligence"],
+      "url": "https://github.com/polarisaistudio",
       "achievements": [
-        "Built ensemble model achieving 15% improvement over baseline",
-        "Created real-time scoring API handling 10K+ requests/day",
-        "Implemented automated model retraining and deployment pipeline"
-      ]
-    },
-    {
-      "name": "Market Basket Analysis System",
-      "description": "Advanced recommendation system using market basket analysis and collaborative filtering",
-      "technologies": ["Python", "Spark", "Kafka", "Redis", "Tableau"],
-      "achievements": [
-        "Implemented Apriori and FP-Growth algorithms for association rule mining",
-        "Built real-time recommendation engine with sub-100ms response time",
-        "Created interactive dashboard for business stakeholders"
-      ]
-    },
-    {
-      "name": "Time Series Forecasting Framework",
-      "description": "Automated forecasting system for business metrics using multiple time series models",
-      "technologies": ["R", "Python", "Prophet", "ARIMA", "Shiny", "PostgreSQL"],
-      "achievements": [
-        "Implemented ensemble of 5+ forecasting models with automatic selection",
-        "Built interactive web application for forecast visualization",
-        "Achieved 85% accuracy on quarterly revenue forecasts"
+        "Built scalable analytics pipeline processing 500+ concurrent users with 99.9% data accuracy",
+        "Achieved 4.8/5 user satisfaction through data-driven content optimization and predictive analytics",
+        "Implemented cost optimization analytics reducing infrastructure costs by 40% through intelligent resource allocation"
       ]
     }
   ],
-  "publications": [
-    {
-      "title": "Advanced Customer Segmentation Using Deep Clustering Techniques",
-      "venue": "International Conference on Data Science and Analytics",
-      "year": "2023",
-      "url": "https://example.com/paper1"
-    },
-    {
-      "title": "Causal Inference in Marketing Attribution: A Machine Learning Approach",
-      "venue": "Journal of Business Analytics",
-      "year": "2022",
-      "url": "https://example.com/paper2"
-    }
-  ],
-  "certifications": [
-    {
-      "name": "Google Cloud Professional Data Engineer",
-      "issuer": "Google Cloud",
-      "date": "2023-07",
-      "credential_id": "GCP-PDE-123"
-    },
-    {
-      "name": "AWS Certified Machine Learning - Specialty",
-      "issuer": "Amazon Web Services",
-      "date": "2023-04", 
-      "credential_id": "AWS-MLS-456"
-    },
-    {
-      "name": "Tableau Desktop Certified Professional",
-      "issuer": "Tableau",
-      "date": "2022-11",
-      "credential_id": "TCP-789"
-    },
-    {
-      "name": "Microsoft Certified: Azure Data Scientist Associate",
-      "issuer": "Microsoft",
-      "date": "2022-08",
-      "credential_id": "MCADSA-101"
-    }
-  ]
+  "publications": [],
+  "certifications": []
 }

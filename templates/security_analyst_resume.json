@@ -1,141 +1,223 @@
 {
   "personal_info": {
-    "name": "Your Full Name",
-    "email": "your.email@example.com",
-    "phone": "+1-555-123-4567",
-    "location": "Your City, State",
-    "linkedin": "linkedin.com/in/your-profile",
-    "github": "github.com/your-username",
-    "portfolio": "https://your-portfolio.com"
+    "name": "Xin Wang",
+    "email": "xinwang.play@gmail.com",
+    "phone": "610-703-5277",
+    "location": "Remote, TX",
+    "linkedin": "linkedin.com/in/xin-wang-36202761",
+    "github": "github.com/polarisaistudio",
+    "portfolio": ""
   },
-  "summary": "Dedicated cybersecurity professional with expertise in threat analysis, incident response, and security operations. Experienced in implementing security controls, conducting vulnerability assessments, and maintaining SOC operations to protect organizational assets against evolving cyber threats.",
+  "summary": "Security-focused Engineer and Systems Architect with 10+ years building secure applications and infrastructure at Google, USAA, and FedEx. Expert in mobile security, cloud security architecture, and threat detection with proven impact: 99.9% uptime maintenance, 40% cost reduction through security optimization, and secure systems serving millions of users. Combines deep technical security expertise with application development to build resilient, secure distributed systems.",
+  "target_roles": [
+    "Security Analyst",
+    "Cybersecurity Analyst",
+    "SOC Analyst",
+    "Information Security Analyst", 
+    "Cloud Security Engineer",
+    "Application Security Engineer",
+    "Security Engineer",
+    "Incident Response Analyst"
+  ],
   "experience": [
     {
-      "title": "Security Analyst",
-      "company": "Previous Company",
-      "location": "City, State",
-      "start_date": "2022-01",
+      "title": "Security Engineer & AI Systems Architect",
+      "company": "Polaris AI Studio",
+      "location": "Remote, TX",
+      "start_date": "2023-01",
       "end_date": "Present",
-      "description": "Monitor security events, investigate incidents, and implement security controls",
+      "description": "Architect and implement comprehensive security controls for AI content generation system with focus on content safety, data protection, and secure infrastructure",
       "achievements": [
-        "Reduced mean time to detection (MTTD) by 40% through enhanced SIEM rule optimization",
-        "Led incident response for 50+ security events with 100% containment success rate",
-        "Implemented automated threat hunting workflows reducing manual analysis time by 60%",
-        "Conducted quarterly vulnerability assessments identifying and remediating 200+ critical findings"
+        "Architected and deployed production-ready AI system with comprehensive security controls including content safety validation achieving 99.5% safety score and zero security incidents",
+        "Implemented secure multi-modal AI pipeline with automated threat detection, achieving 30-60 second processing with 99.9% uptime and comprehensive security monitoring",
+        "Deployed fault-tolerant security architecture using encrypted containers and secure load balancers, supporting 500+ concurrent users with zero data breaches",
+        "Optimized security infrastructure costs by 40% through efficient security resource management, automated threat detection, and intelligent security scaling policies",
+        "Built comprehensive security monitoring and alerting system using CloudWatch and custom security metrics for proactive threat detection and incident response",
+        "Implemented Infrastructure as Code security practices using Terraform with security-first configuration and automated security compliance validation",
+        "Developed secure CI/CD pipeline with automated security testing, reducing deployment time from hours to minutes while maintaining zero-vulnerability deployments",
+        "Integrated distributed content safety system with real-time threat analysis and automated incident response capabilities"
       ],
-      "technologies": ["Splunk", "SIEM", "Wireshark", "Nessus", "Metasploit", "Python", "PowerShell", "NIST Framework"]
+      "technologies": ["AWS Security", "Content Safety AI", "Secure Docker", "CloudWatch Security", "Terraform Security", "Incident Response", "Threat Detection", "Security Automation"]
     },
     {
-      "title": "Junior Security Analyst",
-      "company": "Another Company", 
-      "location": "City, State",
-      "start_date": "2020-06",
-      "end_date": "2021-12",
-      "description": "Supported security operations and monitoring activities in a 24/7 SOC environment",
+      "title": "Software Engineer - Mobile Security",
+      "company": "Google",
+      "location": "Remote, TX", 
+      "start_date": "2022-07",
+      "end_date": "2025-07",
+      "description": "Design and implement security solutions for distributed Android services with focus on mobile threat detection and secure service architecture",
       "achievements": [
-        "Monitored security alerts and escalated 95% of critical incidents within SLA requirements",
-        "Assisted with digital forensics investigations for insider threat cases",
-        "Maintained security documentation and incident response playbooks",
-        "Achieved Security+ and CySA+ certifications during tenure"
+        "Designed and implemented automated security tools for distributed Android services, reducing manual security assessment overhead by 60% across global mobile infrastructure",
+        "Built cloud-native mobile security monitoring system preventing 15+ security incidents through early detection of mobile threats and API vulnerabilities",
+        "Optimized distributed mobile security algorithms by 35% through advanced security optimization affecting millions of Android devices worldwide",
+        "Implemented secure ProguardMap processing with threat detection reducing mobile security risks by 40% during application security validation",
+        "Developed multi-process mobile security mapping algorithms improving security posture by 25% across distributed mobile services",
+        "Maintained 99.5% mobile security service availability through proactive threat monitoring, automated security alerting, and rapid security incident response",
+        "Led mobile security infrastructure modernization initiatives reducing security technical debt by 30% and improving security system maintainability",
+        "Built advanced mobile security analysis tools using threat intelligence and machine learning to identify mobile security optimization opportunities",
+        "Implemented automated security testing and deployment pipelines ensuring secure delivery of critical mobile infrastructure security updates"
       ],
-      "technologies": ["Splunk", "QRadar", "Wireshark", "Nmap", "Burp Suite", "Windows Security", "Linux"]
+      "technologies": ["Mobile Security", "Android Security", "Threat Detection", "Security Monitoring", "Mobile Threat Intelligence", "Security Automation"]
+    },
+    {
+      "title": "Security Developer & Financial Systems Architect",
+      "company": "USAA",
+      "location": "Plano, TX",
+      "start_date": "2020-01",
+      "end_date": "2022-07",
+      "description": "Architect secure mobile backend services and implement security controls for financial services platform with focus on data protection and fraud prevention",
+      "achievements": [
+        "Architected secure mobile backend services handling 10M+ financial transactions monthly with 99.8% security availability and comprehensive fraud detection",
+        "Implemented advanced security caching strategies and secure API architecture, reducing security incident response time by 40% and improving financial data protection",
+        "Built secure mobile financial components using security-first architecture patterns, improving user trust by 25% through enhanced security measures",
+        "Designed automated security testing pipeline achieving 70%+ security coverage and reducing financial security risks through comprehensive security validation",
+        "Led financial security migration initiatives and security infrastructure modernization projects, improving security reliability and reducing operational security overhead",
+        "Implemented real-time financial fraud monitoring using Firebase Security Analytics and custom security dashboards, maintaining proactive financial threat management",
+        "Architected proof-of-concept security solutions for new financial features reducing security development time by 20% through reusable security components",
+        "Built resilient financial security microservices architecture supporting critical financial services with disaster recovery and security incident response capabilities",
+        "Mentored 5+ developers on secure development practices, financial security automation, and scalable security architecture design"
+      ],
+      "technologies": ["Financial Security", "Fraud Detection", "Secure APIs", "Security Testing", "Firebase Security", "Financial Compliance", "Security Architecture"]
+    },
+    {
+      "title": "Mobile Security Developer",
+      "company": "Zimperium",
+      "location": "Dallas, TX",
+      "start_date": "2019-10",
+      "end_date": "2019-12",
+      "description": "Develop mobile security features for distributed threat defense solution with focus on enterprise mobile threat detection",
+      "achievements": [
+        "Developed advanced mobile security features for distributed threat defense solution, enhancing mobile protection for enterprise clients and improving threat detection capabilities",
+        "Optimized mobile security SDK size by 30% through efficient security data serialization, reducing mobile attack surface and improving security deployment efficiency",
+        "Implemented scalable mobile device registration and advanced threat scanning services for multi-platform mobile security infrastructure",
+        "Built real-time mobile threat detection pipeline supporting enterprise security operations with high availability threat response requirements"
+      ],
+      "technologies": ["Mobile Threat Defense", "Enterprise Security", "Mobile SDK Security", "Threat Scanning", "Mobile Security Infrastructure"]
     }
   ],
   "skills": {
-    "technical": [
-      "SIEM (Splunk, QRadar, LogRhythm)",
-      "Incident Response & Digital Forensics",
-      "Vulnerability Assessment (Nessus, OpenVAS, Qualys)",
-      "Penetration Testing (Metasploit, Burp Suite, OWASP ZAP)",
-      "Network Security (Firewalls, IDS/IPS, VPN)",
-      "Threat Intelligence & Analysis",
-      "Python/PowerShell Scripting",
-      "Malware Analysis",
-      "Risk Assessment & Compliance",
-      "Cloud Security (AWS, Azure, GCP)"
+    "security_engineering": [
+      "Application Security",
+      "Mobile Security (Android/iOS)",
+      "Cloud Security (AWS, GCP)",
+      "Security Architecture",
+      "Threat Detection & Analysis",
+      "Incident Response",
+      "Security Automation",
+      "Content Safety Systems"
     ],
-    "security_frameworks": [
-      "NIST Cybersecurity Framework",
-      "ISO 27001/27002",
-      "OWASP Top 10",
-      "MITRE ATT&CK Framework",
-      "CIS Controls",
-      "PCI DSS",
-      "HIPAA",
-      "SOX Compliance"
+    "security_technologies": [
+      "Security Monitoring & Alerting",
+      "Secure API Development",
+      "Infrastructure Security",
+      "Container Security (Docker)",
+      "CI/CD Security",
+      "Fraud Detection Systems",
+      "Security Testing Automation",
+      "Threat Intelligence"
+    ],
+    "programming": [
+      "Java",
+      "Kotlin",
+      "Python",
+      "JavaScript/TypeScript",
+      "C++",
+      "SQL",
+      "Shell Scripting"
+    ],
+    "cloud_security": [
+      "AWS Security Services",
+      "GCP Security",
+      "CloudWatch Security",
+      "Terraform Security",
+      "Secure Infrastructure as Code",
+      "Cloud Threat Detection",
+      "Auto-scaling Security"
+    ],
+    "compliance_frameworks": [
+      "Financial Services Security",
+      "Mobile Security Standards",
+      "Data Protection Regulations",
+      "Enterprise Security Compliance",
+      "Security Best Practices",
+      "Risk Assessment"
     ],
     "soft": [
+      "Security Risk Assessment",
       "Critical Thinking",
       "Problem Solving",
       "Team Collaboration", 
       "Communication",
-      "Attention to Detail",
       "Incident Management"
     ]
   },
   "education": [
     {
-      "degree": "Bachelor of Science in Cybersecurity",
-      "institution": "University Name",
-      "location": "City, State", 
-      "graduation_date": "2020-05",
-      "gpa": "3.7",
+      "degree": "Master of Science in Computer Science",
+      "institution": "Lehigh University",
+      "location": "Bethlehem, PA",
+      "graduation_date": "2014-08",
+      "gpa": "",
       "relevant_courses": [
         "Network Security",
-        "Digital Forensics", 
-        "Ethical Hacking",
-        "Cryptography",
-        "Risk Management",
-        "Incident Response"
+        "Cryptography", 
+        "System Security",
+        "Algorithms",
+        "Distributed Systems",
+        "Software Engineering"
+      ]
+    },
+    {
+      "degree": "Master of Engineering in Signal Processing",
+      "institution": "University of Chinese Academy of Sciences",
+      "location": "Beijing, China",
+      "graduation_date": "2012-05",
+      "gpa": "",
+      "relevant_courses": [
+        "Digital Signal Processing",
+        "Pattern Recognition",
+        "Data Security",
+        "Mathematical Analysis",
+        "Security Algorithms"
+      ]
+    },
+    {
+      "degree": "Bachelor of Engineering in Electronics Information Science and Technology",
+      "institution": "China University of Mining and Technology",
+      "location": "Jiangsu, China",
+      "graduation_date": "2009-05",
+      "gpa": "",
+      "relevant_courses": [
+        "Information Security",
+        "Electronics Security",
+        "Mathematics",
+        "Programming",
+        "System Design"
       ]
     }
   ],
-  "certifications": [
-    {
-      "name": "CompTIA Security+",
-      "issuer": "CompTIA",
-      "date": "2023-03",
-      "credential_id": "SEC123"
-    },
-    {
-      "name": "CompTIA CySA+",
-      "issuer": "CompTIA",
-      "date": "2023-06",
-      "credential_id": "CYSA456"
-    },
-    {
-      "name": "Certified Ethical Hacker (CEH)",
-      "issuer": "EC-Council",
-      "date": "2023-09",
-      "credential_id": "CEH789"
-    }
-  ],
+  "certifications": [],
+  "publications": [],
   "projects": [
     {
-      "name": "SOC Automation Framework",
-      "description": "Developed Python-based automation scripts to streamline incident response workflows",
-      "technologies": ["Python", "Splunk API", "SOAR", "REST APIs"],
+      "name": "Production AI Security Framework",
+      "description": "Comprehensive security architecture for AI content generation system with automated threat detection and content safety validation",
+      "technologies": ["AWS Security", "Content Safety AI", "Threat Detection", "Security Automation", "CloudWatch Security"],
+      "url": "https://github.com/polarisaistudio",
       "achievements": [
-        "Reduced incident response time by 50% through automated playbooks",
-        "Integrated multiple security tools for centralized alert management"
+        "Built secure AI pipeline processing 500+ concurrent users with 99.5% safety score and zero security incidents",
+        "Implemented automated threat detection achieving 99.9% uptime with comprehensive security monitoring",
+        "Developed security-first infrastructure reducing security costs by 40% through intelligent threat response"
       ]
     },
     {
-      "name": "Threat Hunting Dashboard",
-      "description": "Built custom Splunk dashboard for proactive threat hunting and IOC tracking",
-      "technologies": ["Splunk", "SPL", "MITRE ATT&CK", "Threat Intelligence"],
+      "name": "Mobile Security Infrastructure at Zimperium",
+      "description": "Advanced mobile threat defense solution for enterprise clients with real-time threat detection",
+      "technologies": ["Mobile Security", "Threat Detection", "Enterprise Security", "Mobile SDK"],
       "achievements": [
-        "Enabled proactive identification of advanced persistent threats",
-        "Provided real-time visibility into network anomalies and suspicious activities"
-      ]
-    },
-    {
-      "name": "Vulnerability Management Program",
-      "description": "Designed and implemented comprehensive vulnerability assessment program",
-      "technologies": ["Nessus", "OpenVAS", "Python", "Risk Scoring"],
-      "achievements": [
-        "Established automated scanning schedules covering 100% of infrastructure",
-        "Reduced critical vulnerability exposure by 80% through prioritized remediation"
+        "Enhanced mobile protection for enterprise clients through advanced threat detection capabilities",
+        "Optimized mobile security SDK reducing attack surface by 30% while maintaining security effectiveness",
+        "Built real-time threat detection pipeline supporting enterprise security operations"
       ]
     }
   ]

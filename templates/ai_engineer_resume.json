@@ -1,14 +1,14 @@
 {
   "personal_info": {
-    "name": "Your Full Name",
-    "email": "your.email@example.com",
-    "phone": "+1-555-123-4567",
-    "location": "Remote (US Timezone)",
-    "linkedin": "linkedin.com/in/your-profile",
-    "github": "github.com/your-username",
-    "portfolio": "https://your-portfolio.com"
+    "name": "Xin Wang",
+    "email": "xinwang.play@gmail.com",
+    "phone": "610-703-5277",
+    "location": "Remote, TX",
+    "linkedin": "linkedin.com/in/xin-wang-36202761",
+    "github": "github.com/polarisaistudio",
+    "portfolio": ""
   },
-  "summary": "AI Engineer with expertise in machine learning, deep learning, and LLM applications. Experienced in building scalable ML systems, training neural networks, and deploying AI solutions in production. Strong background in Python, PyTorch/TensorFlow, and cloud ML platforms.",
+  "summary": "AI Engineer and Cloud Systems Architect with 10+ years building production AI/ML systems and scalable distributed applications at Google, USAA, and FedEx. Expert in designing multi-modal AI pipelines, optimizing ML infrastructure, and deploying AI systems at scale. Proven track record with cloud ML platforms (AWS SageMaker, GCP AI), distributed systems optimization, and leading teams to deliver AI solutions serving millions of users.",
   "target_roles": [
     "AI Engineer",
     "Machine Learning Engineer", 
@@ -20,70 +20,94 @@
   ],
   "experience": [
     {
-      "title": "AI Engineer",
-      "company": "Tech Company",
-      "location": "Remote",
+      "title": "AI Systems Architect & Cloud Engineer",
+      "company": "Polaris AI Studio",
+      "location": "Remote, TX",
       "start_date": "2023-01",
       "end_date": "Present",
-      "description": "Develop and deploy machine learning models and AI applications for production use",
+      "description": "Architect and deploy production-ready AI systems generating personalized content with focus on ML pipeline optimization and scalability",
       "achievements": [
-        "Built LLM-powered applications serving 50,000+ users with 99.9% uptime",
-        "Reduced model inference time by 60% through optimization and efficient deployment",
-        "Implemented MLOps pipeline that accelerated model deployment by 10x",
-        "Led development of computer vision system achieving 95% accuracy on production data"
+        "Architected and deployed production-ready AI system generating personalized children's books using multi-modal AI pipeline with AWS SageMaker and containerized ML services",
+        "Implemented scalable multi-modal AI pipeline with auto-scaling capabilities, achieving 30-60 second end-to-end processing with 99.9% uptime serving 500+ concurrent users",
+        "Built fault-tolerant ML system architecture using Docker containers and load balancers with comprehensive content safety validation achieving 99.5% safety score",
+        "Optimized AI infrastructure costs by 40% through efficient resource management, model optimization, and automated ML scaling policies",
+        "Developed MLOps pipeline with automated model deployment, reducing deployment time from hours to minutes while maintaining zero-downtime updates",
+        "Implemented comprehensive ML monitoring and alerting system using CloudWatch for proactive model performance tracking and drift detection",
+        "Built Infrastructure as Code using Terraform for consistent ML environment provisioning and automated AI model deployment",
+        "Integrated distributed AI content generation system with safety validation services and real-time performance optimization"
       ],
-      "technologies": ["Python", "PyTorch", "TensorFlow", "Transformers", "MLflow", "AWS SageMaker", "Docker", "Kubernetes"]
+      "technologies": ["AWS SageMaker", "Docker", "Kubernetes", "Terraform", "MLOps", "Multi-modal AI", "Content Generation", "ML Monitoring", "Auto-scaling"]
     },
     {
-      "title": "Machine Learning Engineer",
-      "company": "Previous Company",
-      "location": "Remote", 
-      "start_date": "2021-06",
-      "end_date": "2022-12",
-      "description": "Developed ML models and data pipelines for recommendation systems and predictive analytics",
+      "title": "Software Engineer - Distributed AI Systems",
+      "company": "Google",
+      "location": "Remote, TX", 
+      "start_date": "2022-07",
+      "end_date": "2025-07",
+      "description": "Design and optimize distributed AI/ML systems and algorithms for global-scale Android services affecting millions of devices",
       "achievements": [
-        "Built recommendation engine that increased user engagement by 35%",
-        "Designed feature engineering pipeline processing 1TB+ daily data",
-        "Implemented A/B testing framework for ML model performance evaluation",
-        "Optimized model training pipeline reducing training time from hours to minutes"
+        "Designed and implemented automated ML tools for distributed Android services, reducing manual AI model maintenance overhead by 60% across global infrastructure",
+        "Built cloud-native AI monitoring system preventing 15+ production incidents through early detection of ML model compatibility and performance issues",
+        "Optimized distributed AI system memory usage by 35% through advanced algorithmic improvements affecting millions of Android devices worldwide",
+        "Implemented ML-powered ProguardMap processing optimization reducing AI infrastructure resource consumption by 40% during model training and inference",
+        "Developed multi-process AI service mapping algorithms decreasing GMSCore memory footprint by 25% across distributed mobile ML services",
+        "Maintained 99.5% AI service availability through proactive ML monitoring, automated alerting, and rapid AI incident response procedures",
+        "Led AI infrastructure modernization initiatives reducing technical debt by 30% and improving ML system maintainability and scalability",
+        "Built advanced performance analysis tools for distributed AI systems using ML profiling techniques to identify optimization opportunities",
+        "Implemented automated testing and deployment pipelines for AI/ML services ensuring reliable delivery of critical mobile intelligence updates"
       ],
-      "technologies": ["Python", "Scikit-learn", "Pandas", "Apache Spark", "PostgreSQL", "Redis", "AWS"]
+      "technologies": ["GCP AI Platform", "Distributed ML", "AI Monitoring", "Performance Optimization", "ML Pipeline Automation", "Android AI Services"]
+    },
+    {
+      "title": "ML Software Developer & AI Architect",
+      "company": "USAA",
+      "location": "Plano, TX",
+      "start_date": "2020-01",
+      "end_date": "2022-07",
+      "description": "Architect ML-powered mobile backend services and AI systems for financial services platform with focus on predictive analytics",
+      "achievements": [
+        "Architected ML-powered mobile backend services handling 10M+ API requests monthly with 99.8% availability and intelligent caching for financial data analysis",
+        "Implemented AI-driven caching strategies and optimized ML API architecture, reducing cloud service costs by 40% and improving ML inference response times",
+        "Built cloud-native mobile AI components using modern ML architecture patterns, improving user engagement by 25% through predictive features",
+        "Designed automated ML testing pipeline achieving 70%+ code coverage and reducing AI model deployment risks through comprehensive ML quality gates",
+        "Led cloud ML migration initiatives and AI infrastructure modernization projects, improving ML system reliability and reducing operational overhead",
+        "Implemented real-time ML monitoring using Firebase Analytics and custom AI dashboards, maintaining proactive ML model health management",
+        "Architected AI proof-of-concept solutions for new ML features reducing development time by 20% through reusable ML cloud components",
+        "Built resilient ML microservices architecture supporting critical financial AI services with disaster recovery capabilities",
+        "Mentored 5+ developers on cloud-native ML development practices, MLOps automation, and scalable AI architecture design"
+      ],
+      "technologies": ["AWS SageMaker", "ML APIs", "Predictive Analytics", "MLOps", "Firebase ML", "AI Testing", "Financial ML", "Disaster Recovery"]
     }
   ],
   "skills": {
     "ai_ml": [
-      "Machine Learning",
-      "Deep Learning", 
-      "Neural Networks",
+      "Multi-modal AI Systems",
+      "Machine Learning Pipeline Design", 
+      "AI Infrastructure Optimization",
       "Large Language Models (LLMs)",
-      "Computer Vision",
-      "Natural Language Processing",
-      "Reinforcement Learning",
-      "MLOps"
+      "Content Generation AI",
+      "Distributed ML Systems",
+      "MLOps & Model Deployment",
+      "AI System Architecture"
     ],
     "technical": [
       "Python",
-      "PyTorch", 
-      "TensorFlow",
-      "Transformers",
-      "Hugging Face",
-      "Scikit-learn",
-      "Pandas",
-      "NumPy",
-      "MLflow",
-      "Weights & Biases",
-      "Apache Spark",
-      "Docker",
-      "Kubernetes"
+      "Java", 
+      "Kotlin",
+      "JavaScript/TypeScript",
+      "C++",
+      "SQL",
+      "Shell Scripting",
+      "Dart"
     ],
-    "cloud_platforms": [
+    "cloud_ml_platforms": [
       "AWS SageMaker",
-      "Google Cloud AI Platform",
-      "Azure Machine Learning",
-      "Vertex AI",
-      "AWS Lambda",
-      "S3",
-      "EC2"
+      "GCP AI Platform",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "MLOps Pipelines",
+      "Auto-scaling ML Systems"
     ],
     "soft": [
       "Research & Development",
@@ -97,51 +121,59 @@
   "education": [
     {
       "degree": "Master of Science in Computer Science",
-      "institution": "University Name",
-      "location": "City, State",
-      "graduation_date": "2021-05", 
-      "gpa": "3.8",
+      "institution": "Lehigh University",
+      "location": "Bethlehem, PA",
+      "graduation_date": "2014-08",
+      "gpa": "",
       "relevant_courses": [
         "Machine Learning",
-        "Deep Learning",
-        "Neural Networks", 
+        "Signal Processing",
+        "Distributed Systems", 
+        "Algorithms",
         "Computer Vision",
-        "Natural Language Processing",
-        "Statistical Learning Theory"
+        "Statistical Learning"
       ],
-      "thesis": "Advanced Neural Architecture Search for Computer Vision Tasks"
+      "thesis": ""
+    },
+    {
+      "degree": "Master of Engineering in Signal Processing",
+      "institution": "University of Chinese Academy of Sciences",
+      "location": "Beijing, China",
+      "graduation_date": "2012-05",
+      "gpa": "",
+      "relevant_courses": [
+        "Digital Signal Processing",
+        "Machine Learning",
+        "Pattern Recognition",
+        "Statistical Analysis"
+      ],
+      "thesis": ""
+    },
+    {
+      "degree": "Bachelor of Engineering in Electronics Information Science and Technology",
+      "institution": "China University of Mining and Technology",
+      "location": "Jiangsu, China",
+      "graduation_date": "2009-05",
+      "gpa": "",
+      "relevant_courses": [
+        "Signal Processing",
+        "Electronics",
+        "Mathematics",
+        "Programming"
+      ],
+      "thesis": ""
     }
   ],
   "projects": [
     {
-      "name": "Multi-Modal LLM Application",
-      "description": "Built a production-ready application combining text and image processing using transformers",
-      "technologies": ["Python", "Transformers", "PyTorch", "FastAPI", "Redis", "Docker"],
-      "url": "https://github.com/username/multimodal-llm",
+      "name": "Production AI Content Generation System",
+      "description": "Multi-modal AI system for personalized children's book generation with safety validation",
+      "technologies": ["AWS SageMaker", "Docker", "Kubernetes", "Multi-modal AI", "Content Safety", "Auto-scaling"],
+      "url": "https://github.com/polarisaistudio",
       "achievements": [
-        "Integrated CLIP and GPT models for multi-modal understanding",
-        "Achieved 40ms average response time with caching optimization",
-        "Deployed using microservices architecture handling 1000+ concurrent users"
-      ]
-    },
-    {
-      "name": "Real-time Object Detection System", 
-      "description": "End-to-end computer vision pipeline for real-time object detection and tracking",
-      "technologies": ["PyTorch", "YOLO", "OpenCV", "WebRTC", "AWS Lambda", "S3"],
-      "achievements": [
-        "Implemented custom YOLO model achieving 92% mAP on custom dataset",
-        "Built real-time streaming pipeline with sub-100ms latency",
-        "Created automated data annotation and model retraining system"
-      ]
-    },
-    {
-      "name": "Distributed Training Framework",
-      "description": "Built framework for distributed training of large language models across multiple GPUs",
-      "technologies": ["PyTorch", "Horovod", "Ray", "Kubernetes", "MLflow"],
-      "achievements": [
-        "Reduced training time for 7B parameter models by 75%",
-        "Implemented gradient compression reducing communication overhead by 60%",
-        "Created fault-tolerant training with automatic checkpoint recovery"
+        "Built scalable AI pipeline processing 500+ concurrent users with 99.9% uptime",
+        "Achieved 30-60 second end-to-end AI content generation with 99.5% safety score",
+        "Deployed fault-tolerant architecture with automated ML model deployment and monitoring"
       ]
     }
   ],
@@ -153,24 +185,5 @@
       "url": "https://arxiv.org/abs/example"
     }
   ],
-  "certifications": [
-    {
-      "name": "AWS Certified Machine Learning - Specialty",
-      "issuer": "Amazon Web Services",
-      "date": "2023-09",
-      "credential_id": "AWS-MLS-123"
-    },
-    {
-      "name": "TensorFlow Developer Certificate",
-      "issuer": "TensorFlow",
-      "date": "2023-06",
-      "credential_id": "TF-DEV-456"
-    },
-    {
-      "name": "Deep Learning Specialization",
-      "issuer": "Coursera/deeplearning.ai",
-      "date": "2022-03",
-      "credential_id": "DL-SPEC-789"
-    }
-  ]
+  "certifications": []
 }
